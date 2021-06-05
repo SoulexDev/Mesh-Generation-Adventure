@@ -56,25 +56,25 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Editor\GUIButton.cs" />
-    <Compile Include="Assets\Spoonie Tutorials\Common\Standard Assets\Effects\AmbientOcclusion\Editor\AmbientOcclusionEditor.cs" />
     <Compile Include="Assets\Spoonie Tutorials\Common\Standard Assets\Effects\Bloom\Editor\BloomEditor.cs" />
-    <Compile Include="Assets\Spoonie Tutorials\Common\Standard Assets\Effects\AntiAliasing\SMAA\Editor\SMAAEditor.cs" />
-    <Compile Include="Assets\Spoonie Tutorials\Common\Standard Assets\Effects\MotionBlur\Editor\MotionBlurEditor.cs" />
-    <Compile Include="Assets\Spoonie Tutorials\Common\Standard Assets\Effects\AntiAliasing\Editor\IAntiAliasingEditor.cs" />
-    <Compile Include="Assets\Spoonie Tutorials\Common\Standard Assets\Effects\DepthOfField\Editor\DepthOfFieldEditor.cs" />
-    <Compile Include="Assets\Spoonie Tutorials\Common\Standard Assets\Effects\TemporalAntiAliasing\Editor\TemporalAntiAliasingEditor.cs" />
-    <Compile Include="Assets\Spoonie Tutorials\Common\Standard Assets\Effects\Bloom\Editor\BloomGraphDrawer.cs" />
-    <Compile Include="Assets\Spoonie Tutorials\Common\Standard Assets\Effects\LensAberrations\Editor\LensAberrationsEditor.cs" />
-    <Compile Include="Assets\Spoonie Tutorials\Common\Standard Assets\Effects\Common\Editor\FieldFinder.cs" />
-    <Compile Include="Assets\Spoonie Tutorials\Common\Standard Assets\Effects\AntiAliasing\FXAA\Editor\FXAAEditor.cs" />
-    <Compile Include="Assets\Spoonie Tutorials\Common\Standard Assets\Effects\TonemappingColorGrading\Editor\TonemappingColorGradingEditor.cs" />
-    <Compile Include="Assets\Spoonie Tutorials\Common\Standard Assets\Effects\MotionBlur\Editor\MotionBlurGraphDrawer.cs" />
-    <Compile Include="Assets\Spoonie Tutorials\Common\Standard Assets\Effects\AntiAliasing\Editor\AntiAliasingEditor.cs" />
-    <Compile Include="Assets\Spoonie Tutorials\Common\Standard Assets\Effects\Common\Editor\MinDrawer.cs" />
-    <Compile Include="Assets\Editor\ScriptableObjectDrawer.cs" />
     <Compile Include="Assets\Editor\MonoBehaviourEditor.cs" />
+    <Compile Include="Assets\Spoonie Tutorials\Common\Standard Assets\Effects\LensAberrations\Editor\LensAberrationsEditor.cs" />
+    <Compile Include="Assets\Spoonie Tutorials\Common\Standard Assets\Effects\AmbientOcclusion\Editor\AmbientOcclusionEditor.cs" />
+    <Compile Include="Assets\Spoonie Tutorials\Common\Standard Assets\Effects\MotionBlur\Editor\MotionBlurEditor.cs" />
+    <Compile Include="Assets\Spoonie Tutorials\Common\Standard Assets\Effects\MotionBlur\Editor\MotionBlurGraphDrawer.cs" />
     <Compile Include="Assets\Spoonie Tutorials\Common\Standard Assets\Effects\ScreenSpaceReflection\Editor\ScreenSpaceReflectionEditor.cs" />
+    <Compile Include="Assets\Spoonie Tutorials\Common\Standard Assets\Effects\AntiAliasing\Editor\AntiAliasingEditor.cs" />
+    <Compile Include="Assets\Editor\ScriptableObjectDrawer.cs" />
+    <Compile Include="Assets\Spoonie Tutorials\Common\Standard Assets\Effects\Common\Editor\FieldFinder.cs" />
+    <Compile Include="Assets\Spoonie Tutorials\Common\Standard Assets\Effects\DepthOfField\Editor\DepthOfFieldEditor.cs" />
+    <Compile Include="Assets\Spoonie Tutorials\Common\Standard Assets\Effects\AntiAliasing\SMAA\Editor\SMAAEditor.cs" />
+    <Compile Include="Assets\Spoonie Tutorials\Common\Standard Assets\Effects\TemporalAntiAliasing\Editor\TemporalAntiAliasingEditor.cs" />
+    <Compile Include="Assets\Spoonie Tutorials\Common\Standard Assets\Effects\TonemappingColorGrading\Editor\TonemappingColorGradingEditor.cs" />
+    <Compile Include="Assets\Spoonie Tutorials\Common\Standard Assets\Effects\Bloom\Editor\BloomGraphDrawer.cs" />
+    <Compile Include="Assets\Spoonie Tutorials\Common\Standard Assets\Effects\Common\Editor\MinDrawer.cs" />
+    <Compile Include="Assets\Spoonie Tutorials\Common\Standard Assets\Effects\AntiAliasing\Editor\IAntiAliasingEditor.cs" />
+    <Compile Include="Assets\Spoonie Tutorials\Common\Standard Assets\Effects\AntiAliasing\FXAA\Editor\FXAAEditor.cs" />
+    <Compile Include="Assets\Editor\GUIButton.cs" />
     <Compile Include="Assets\Spoonie Tutorials\Common\Standard Assets\Effects\Common\Editor\EditorGUIHelper.cs" />
   </ItemGroup>
   <ItemGroup>

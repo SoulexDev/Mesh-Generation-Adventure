@@ -232,7 +232,7 @@ MonoBehaviour:
   DirectionalLight: {fileID: 705507994}
   Preset: {fileID: 11400000, guid: 90c3c66ae35e3b840be125e2619555e4, type: 2}
   TimeOfDay: 6.9
-  timeRunning: 0
+  timeRunning: 1
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -395,90 +395,80 @@ MonoBehaviour:
   chunkPosition: {x: 256, y: 0, z: 256}
   terrainMaterial: {fileID: 2100000, guid: 726954e8b0449ee408350bfd472da7c1, type: 2}
   waterMaterial: {fileID: 2100000, guid: 5e6c0cf4db60f61488ace466bed7d71b, type: 2}
-  heightCurve:
+  mountainHeightCurve:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: -0.008281708
-      value: -0.060253143
-      inSlope: 0.030165777
-      outSlope: 0.030165777
-      tangentMode: 0
+      time: 0
+      value: 0
+      inSlope: 1
+      outSlope: 1
+      tangentMode: 34
       weightedMode: 0
       inWeight: 0
-      outWeight: 0.68325377
-    - serializedVersion: 3
-      time: 0.25619054
-      value: 0.479
-      inSlope: 0.17275077
-      outSlope: 0.17275077
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.08176631
-    - serializedVersion: 3
-      time: 0.462
-      value: 0.876
-      inSlope: 0.80557865
-      outSlope: 0.80557865
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      outWeight: 0
     - serializedVersion: 3
       time: 1
       value: 1
-      inSlope: 0.2304833
-      outSlope: 0.2304833
+      inSlope: 1
+      outSlope: 1
       tangentMode: 34
       weightedMode: 0
-      inWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  hillHeightCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 1
+      outSlope: 1
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 1
+      outSlope: 1
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
       outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
   waterHeight: 5.6
-  lockedCurve:
+  lockedMountainCurve:
     serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: -0.008281708
-      value: -0.060253143
-      inSlope: 0.030165777
-      outSlope: 0.030165777
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0.68325377
-    - serializedVersion: 3
-      time: 0.25619054
-      value: 0.479
-      inSlope: 0.17275077
-      outSlope: 0.17275077
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.08176631
-    - serializedVersion: 3
-      time: 0.462
-      value: 0.876
-      inSlope: 0.80557865
-      outSlope: 0.80557865
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0.2304833
-      outSlope: 0.2304833
-      tangentMode: 34
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  lockedHillCurve:
+    serializedVersion: 2
+    m_Curve: []
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
   performanceMode: 0
   autoUpdate: 0
+  Lod:
+    levelsOfDetail: 1
+  terrainSettings:
+    chunkWidth: 16
+    mapChunkSize: 16
+    terrainHeight: 20
+  noiseSettings:
+    mountainLacunarity: 1.8
+    mountainOctaves: 5
+    mountainGain: 0.4
+    mountainFrequency: 0.1
+    hillLacunarity: 1.6
+    hillOctaves: 9
+    hillFrequency: 0.4

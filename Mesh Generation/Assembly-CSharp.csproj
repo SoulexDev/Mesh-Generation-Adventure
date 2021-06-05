@@ -56,34 +56,32 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Spoonie Tutorials\Common\Standard Assets\Effects\AntiAliasing\FXAA\FXAA.cs" />
+    <Compile Include="Assets\Spoonie Tutorials\Common\Standard Assets\Effects\Common\RenderTextureUtility.cs" />
+    <Compile Include="Assets\Spoonie Tutorials\Common\Standard Assets\Effects\Bloom\Bloom.cs" />
+    <Compile Include="Assets\Spoonie Tutorials\Common\Standard Assets\Effects\AmbientOcclusion\AmbientOcclusion.cs" />
+    <Compile Include="Assets\Spoonie Tutorials\DayNight\LightingManager.cs" />
     <Compile Include="Assets\Scripts\World.cs" />
-    <Compile Include="Assets\Scripts\Noise.cs" />
+    <Compile Include="Assets\Spoonie Tutorials\Common\Standard Assets\Effects\LensAberrations\LensAberrations.cs" />
+    <Compile Include="Assets\Spoonie Tutorials\Common\Standard Assets\Effects\AntiAliasing\SMAA\SMAA.cs" />
+    <Compile Include="Assets\Spoonie Tutorials\Common\Standard Assets\Effects\TemporalAntiAliasing\TemporalAntiAliasing.cs" />
     <Compile Include="Assets\Scripts\FastNoiseLite.cs" />
-    <Compile Include="Assets\Scripts\TerrainSettings.cs" />
-    <Compile Include="Assets\Scripts\MeshGenerator.cs" />
-    <Compile Include="Assets\Scripts\TerrainChunk.cs" />
+    <Compile Include="Assets\Spoonie Tutorials\Common\Standard Assets\Effects\TonemappingColorGrading\TonemappingColorGrading.cs" />
+    <Compile Include="Assets\Spoonie Tutorials\Common\Standard Assets\Effects\AmbientOcclusion\Helpers\PropertyObserver.cs" />
     <Compile Include="Assets\Spoonie Tutorials\Common\Standard Assets\Effects\MotionBlur\Helpers\FrameBlendingFilter.cs" />
     <Compile Include="Assets\Spoonie Tutorials\Common\Standard Assets\Effects\ScreenSpaceReflection\ScreenSpaceReflection.cs" />
-    <Compile Include="Assets\Spoonie Tutorials\Common\Standard Assets\Effects\LensAberrations\LensAberrations.cs" />
-    <Compile Include="Assets\Spoonie Tutorials\DayNight\LightingManager.cs" />
+    <Compile Include="Assets\Spoonie Tutorials\Common\Standard Assets\Effects\DepthOfField\DepthOfField.cs" />
+    <Compile Include="Assets\Spoonie Tutorials\Common\Standard Assets\Effects\MotionBlur\MotionBlur.cs" />
+    <Compile Include="Assets\Spoonie Tutorials\Common\Standard Assets\Effects\Common\MinAttribute.cs" />
+    <Compile Include="Assets\Scripts\MeshGenerator.cs" />
+    <Compile Include="Assets\Spoonie Tutorials\Common\Standard Assets\Effects\AmbientOcclusion\Helpers\Settings.cs" />
     <Compile Include="Assets\Spoonie Tutorials\Common\Standard Assets\Effects\AntiAliasing\AntiAliasing.cs" />
     <Compile Include="Assets\Spoonie Tutorials\Common\Standard Assets\Effects\AntiAliasing\IAntiAliasing.cs" />
-    <Compile Include="Assets\Spoonie Tutorials\Common\Standard Assets\Effects\DepthOfField\DepthOfField.cs" />
-    <Compile Include="Assets\Spoonie Tutorials\Common\Standard Assets\Effects\Common\ImageEffectHelper.cs" />
-    <Compile Include="Assets\Spoonie Tutorials\Common\Standard Assets\Effects\TemporalAntiAliasing\TemporalAntiAliasing.cs" />
-    <Compile Include="Assets\Spoonie Tutorials\Common\Standard Assets\Effects\MotionBlur\Helpers\Settings.cs" />
-    <Compile Include="Assets\Spoonie Tutorials\Common\Standard Assets\Effects\AmbientOcclusion\Helpers\Settings.cs" />
-    <Compile Include="Assets\Spoonie Tutorials\Common\Standard Assets\Effects\AntiAliasing\FXAA\FXAA.cs" />
-    <Compile Include="Assets\Spoonie Tutorials\Common\Standard Assets\Effects\Bloom\Bloom.cs" />
-    <Compile Include="Assets\Spoonie Tutorials\Common\Standard Assets\Effects\AmbientOcclusion\Helpers\PropertyObserver.cs" />
-    <Compile Include="Assets\Spoonie Tutorials\Common\Standard Assets\Effects\Common\MinAttribute.cs" />
-    <Compile Include="Assets\Spoonie Tutorials\Common\Standard Assets\Effects\AmbientOcclusion\AmbientOcclusion.cs" />
-    <Compile Include="Assets\Spoonie Tutorials\Common\Standard Assets\Effects\MotionBlur\MotionBlur.cs" />
-    <Compile Include="Assets\Spoonie Tutorials\Common\Standard Assets\Effects\Common\RenderTextureUtility.cs" />
+    <Compile Include="Assets\Scripts\TerrainChunk.cs" />
     <Compile Include="Assets\Spoonie Tutorials\Common\Standard Assets\Effects\MotionBlur\Helpers\ReconstructionFilter.cs" />
-    <Compile Include="Assets\Spoonie Tutorials\Common\Standard Assets\Effects\TonemappingColorGrading\TonemappingColorGrading.cs" />
+    <Compile Include="Assets\Spoonie Tutorials\Common\Standard Assets\Effects\MotionBlur\Helpers\Settings.cs" />
     <Compile Include="Assets\Spoonie Tutorials\DayNight\LightingPreset.cs" />
-    <Compile Include="Assets\Spoonie Tutorials\Common\Standard Assets\Effects\AntiAliasing\SMAA\SMAA.cs" />
+    <Compile Include="Assets\Spoonie Tutorials\Common\Standard Assets\Effects\Common\ImageEffectHelper.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Spoonie Tutorials\Common\Standard Assets\Effects\DepthOfField\Resources\MedianFilter.shader" />

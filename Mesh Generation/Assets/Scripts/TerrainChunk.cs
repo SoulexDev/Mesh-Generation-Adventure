@@ -15,11 +15,14 @@ public class TerrainChunk
     Mesh terrainMesh;
     Mesh waterMesh;
     World world;
-    Noise noise;
-    Vector2[] uvs;
+    NoiseSettings noise;
+    TerrainSettings terrainSettings;
+    LODS lods;
+    Vector2[] waterUvs;
+    Vector2[] terrainUvs;
     private GameObject terrainChunkObject;
     private GameObject waterChunkObject;
-    public TerrainChunk NewChunk(Vector3 pos)
+    public TerrainChunk Init(Vector3 pos)
     {
         terrainChunkObject = new GameObject();
         waterChunkObject = new GameObject();
@@ -30,10 +33,13 @@ public class TerrainChunk
         waterMeshRenderer = waterChunkObject.AddComponent<MeshRenderer>();
         waterMeshFilter = waterChunkObject.AddComponent<MeshFilter>();
         world = GameObject.FindObjectOfType<World>();
+        noise = world.noiseSettings;
+        lods = world.Lod;
+        terrainSettings = world.terrainSettings;
         terrainChunkObject.transform.SetParent(world.transform);
         waterChunkObject.transform.SetParent(world.transform);
-        terrainChunkObject.name = "TerrainChunk " + (pos.x / TerrainSettings.chunkWidth).ToString() + ", " + (pos.z / TerrainSettings.chunkWidth).ToString();
-        waterChunkObject.name = "WaterChunk" + (pos.x / TerrainSettings.chunkWidth).ToString() + ", " + (pos.z / TerrainSettings.chunkWidth).ToString();
+        terrainChunkObject.name = "TerrainChunk " + (pos.x / terrainSettings.chunkWidth).ToString() + ", " + (pos.z / terrainSettings.chunkWidth).ToString();
+        waterChunkObject.name = "WaterChunk " + (pos.x / terrainSettings.chunkWidth).ToString() + ", " + (pos.z / terrainSettings.chunkWidth).ToString();
         terrainMesh = new Mesh();
         waterMesh = new Mesh();
         terrainMesh.Clear();
@@ -46,29 +52,31 @@ public class TerrainChunk
     }
     public void GenerateTerrainChunk(Vector3 pos)
     {
-        terrainVertices = new Vector3[(TerrainSettings.chunkWidth + 1) * (TerrainSettings.chunkWidth + 1)];
-        for (int i = 0, z = 0; z <= TerrainSettings.chunkWidth; z++)
+        int levelOfDetail = (int)lods.levelsOfDetail;
+        int terrainLOD = terrainSettings.chunkWidth / levelOfDetail;
+        terrainVertices = new Vector3[(terrainLOD + 1) * (terrainLOD + 1)];
+        for (int i = 0, z = 0; z <= terrainSettings.chunkWidth; z+= levelOfDetail)
         {
-            for (int x = 0; x <= TerrainSettings.chunkWidth; x++)
+            for (int x = 0; x <= terrainSettings.chunkWidth; x+= levelOfDetail)
             {
-                float terrainY = Noise.GetTerrainGenerationFromNoise(new Vector3(x + pos.x,0,z + pos.z), TerrainSettings.chunkWidth, 1);
-                terrainVertices[i] = new Vector3(x, world.lockedCurve.Evaluate(terrainY) * TerrainSettings.terrainHeight, z);
+                float terrainY = noise.GetTerrainGenerationFromNoise(new Vector3(x + pos.x,0,z + pos.z), terrainSettings.chunkWidth, 1, world.lockedMountainCurve, world.lockedHillCurve);
+                terrainVertices[i] = new Vector3(x, terrainY * terrainSettings.terrainHeight, z);
                 i++;
             }
         }
         int vertexIndex = 0;
         int triangleIndex = 0;
-        terrainTriangles = new int[TerrainSettings.chunkWidth * TerrainSettings.chunkWidth * 6];
-        for (int z = 0; z < TerrainSettings.chunkWidth; z++)
+        terrainTriangles = new int[terrainLOD * terrainLOD * 6];
+        for (int z = 0; z < terrainLOD; z++)
         {
-            for (int x = 0; x < TerrainSettings.chunkWidth; x++)
+            for (int x = 0; x < terrainLOD; x++)
             {
                 terrainTriangles[triangleIndex + 0] = vertexIndex;
-                terrainTriangles[triangleIndex + 1] = vertexIndex + TerrainSettings.chunkWidth + 1;
+                terrainTriangles[triangleIndex + 1] = vertexIndex + terrainLOD + 1;
                 terrainTriangles[triangleIndex + 2] = vertexIndex + 1;
                 terrainTriangles[triangleIndex + 3] = vertexIndex + 1;
-                terrainTriangles[triangleIndex + 4] = vertexIndex + TerrainSettings.chunkWidth + 1;
-                terrainTriangles[triangleIndex + 5] = vertexIndex + TerrainSettings.chunkWidth + 2;
+                terrainTriangles[triangleIndex + 4] = vertexIndex + terrainLOD + 1;
+                terrainTriangles[triangleIndex + 5] = vertexIndex + terrainLOD + 2;
                 vertexIndex++;
                 triangleIndex += 6;
             }
@@ -78,28 +86,28 @@ public class TerrainChunk
     }
     public void GenerateWaterChunk(Vector3 pos)
     {
-        waterVertices = new Vector3[(TerrainSettings.chunkWidth + 1) * (TerrainSettings.chunkWidth + 1)];
-        for (int i = 0, z = 0; z <= TerrainSettings.chunkWidth; z++)
+        waterVertices = new Vector3[(terrainSettings.chunkWidth + 1) * (terrainSettings.chunkWidth + 1)];
+        for (int i = 0, z = 0; z <= terrainSettings.chunkWidth; z++)
         {
-            for (int x = 0; x <= TerrainSettings.chunkWidth; x++)
+            for (int x = 0; x <= terrainSettings.chunkWidth; x++)
             {
-                waterVertices[i] = new Vector3(x, world.waterHeight / TerrainSettings.terrainHeight * 5, z);
+                waterVertices[i] = new Vector3(x, world.waterHeight / terrainSettings.terrainHeight * 5, z);
                 i++;
             }
         }
         int vertexIndex = 0;
         int triangleIndex = 0;
-        waterTriangles = new int[TerrainSettings.chunkWidth * TerrainSettings.chunkWidth * 6];
-        for (int z = 0; z < TerrainSettings.chunkWidth; z++)
+        waterTriangles = new int[terrainSettings.chunkWidth * terrainSettings.chunkWidth * 6];
+        for (int z = 0; z < terrainSettings.chunkWidth; z++)
         {
-            for (int x = 0; x < TerrainSettings.chunkWidth; x++)
+            for (int x = 0; x < terrainSettings.chunkWidth; x++)
             {
                 waterTriangles[triangleIndex + 0] = vertexIndex;
-                waterTriangles[triangleIndex + 1] = vertexIndex + TerrainSettings.chunkWidth + 1;
+                waterTriangles[triangleIndex + 1] = vertexIndex + terrainSettings.chunkWidth + 1;
                 waterTriangles[triangleIndex + 2] = vertexIndex + 1;
                 waterTriangles[triangleIndex + 3] = vertexIndex + 1;
-                waterTriangles[triangleIndex + 4] = vertexIndex + TerrainSettings.chunkWidth + 1;
-                waterTriangles[triangleIndex + 5] = vertexIndex + TerrainSettings.chunkWidth + 2;
+                waterTriangles[triangleIndex + 4] = vertexIndex + terrainSettings.chunkWidth + 1;
+                waterTriangles[triangleIndex + 5] = vertexIndex + terrainSettings.chunkWidth + 2;
                 vertexIndex++;
                 triangleIndex += 6;
             }
@@ -109,20 +117,26 @@ public class TerrainChunk
     }
     void UpdateTerrainMesh()
     {
+        terrainUvs = new Vector2[terrainVertices.Length];
+        for (int i = 0; i < terrainUvs.Length; i++)
+        {
+            terrainUvs[i] = new Vector2(terrainVertices[i].x, terrainVertices[i].z);
+        }
         terrainMesh.vertices = terrainVertices;
         terrainMesh.triangles = terrainTriangles;
+        terrainMesh.uv = terrainUvs;
         terrainMesh.RecalculateNormals();
     }
     void UpdateWaterMesh()
     {
-        uvs = new Vector2[waterVertices.Length];
-        for (int i = 0; i < uvs.Length; i++)
+        waterUvs = new Vector2[waterVertices.Length];
+        for (int i = 0; i < waterUvs.Length; i++)
         {
-            uvs[i] = new Vector2(waterVertices[i].x, waterVertices[i].z);
+            waterUvs[i] = new Vector2(waterVertices[i].x, waterVertices[i].z);
         }
         waterMesh.vertices = waterVertices;
         waterMesh.triangles = waterTriangles;
-        waterMesh.uv = uvs;
+        waterMesh.uv = waterUvs;
         waterMesh.RecalculateNormals();
     }
     private void OnDrawGizmos()
