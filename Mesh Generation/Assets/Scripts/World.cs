@@ -8,8 +8,11 @@ public class World : MonoBehaviour
     List<TerrainChunk> chunk = new List<TerrainChunk>();
     Noise noise;
     public Vector3 chunkPosition;
-    public Material mainMat;
+    public Material terrainMaterial;
+    public Material waterMaterial;
     public AnimationCurve heightCurve;
+    [Range(0,50)]
+    public float waterHeight;
     [HideInInspector]
     public AnimationCurve lockedCurve;
     public bool performanceMode = false;
@@ -38,7 +41,8 @@ public class World : MonoBehaviour
                 chunk.Add(new TerrainChunk());
                 chunkPosition = new Vector3(x * TerrainSettings.chunkWidth, 0, z * TerrainSettings.chunkWidth);
                 chunk[c].NewChunk(chunkPosition);
-                chunk[c].meshRenderer.material = mainMat;
+                chunk[c].terrainMeshRenderer.material = terrainMaterial;
+                chunk[c].waterMeshRenderer.material = waterMaterial;
                 c++;
                 if(performanceMode)
                     yield return new WaitForFixedUpdate();

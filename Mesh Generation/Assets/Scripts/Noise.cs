@@ -10,20 +10,20 @@ public class Noise
         FastNoiseLite mountainsAndHills = new FastNoiseLite();
         float worldNoiseX = ((pos.x + 0.1f) / chunkWidth * scale);
         float worldNoiseZ = ((pos.z + 0.1f) / chunkWidth * scale);
-        //SetNoiseValues(flatLand, mountainsAndHills);
-        //return flatLand.GetNoise(worldNoiseX, worldNoiseZ) + mountainsAndHills.GetNoise(worldNoiseX, worldNoiseZ);
-        return Mathf.PerlinNoise(worldNoiseX, worldNoiseZ);
+        SetNoiseValues(/*flatLand, */ mountainsAndHills);
+        return /*flatLand.GetNoise(worldNoiseX, worldNoiseZ) + */mountainsAndHills.GetNoise(worldNoiseX, worldNoiseZ);
+        //return Mathf.PerlinNoise(worldNoiseX, worldNoiseZ);
     }
-    static void SetNoiseValues(FastNoiseLite flatLand, FastNoiseLite mountainsAndHills)
+    static void SetNoiseValues(/*FastNoiseLite flatLand,*/ FastNoiseLite mountainsAndHills)
     {
         //Flatland
-        flatLand.SetNoiseType(FastNoiseLite.NoiseType.Value);
-        flatLand.SetFractalType(FastNoiseLite.FractalType.None);
+        //flatLand.SetNoiseType(FastNoiseLite.NoiseType.Value);
+        //flatLand.SetFractalType(FastNoiseLite.FractalType.None);
         //Mountains and Hills
-        mountainsAndHills.SetNoiseType(FastNoiseLite.NoiseType.OpenSimplex2S);
+        mountainsAndHills.SetNoiseType(FastNoiseLite.NoiseType.Perlin);
         mountainsAndHills.SetFractalType(FastNoiseLite.FractalType.FBm);
-        mountainsAndHills.SetFractalLacunarity(9);
+        mountainsAndHills.SetFractalLacunarity(1.6f);
         mountainsAndHills.SetFractalOctaves(9);
-        mountainsAndHills.SetFrequency(5);
+        mountainsAndHills.SetFrequency(0.4f);
     }
 }

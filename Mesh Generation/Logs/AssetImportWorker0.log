@@ -1,0 +1,2120 @@
+Using pre-set license
+Built from '2020.3/release' branch; Version is '2020.3.1f1 (77a89f25062f) revision 7841951'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Pro; OS build 19041.985; Version 2004; 64bit' Language: 'en' Physical Memory: 16332 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+E:\Unity\2020.3.1f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+E:/Mesh-Generation-Adventure/Mesh Generation
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+58981
+Successfully changed project path to: E:/Mesh-Generation-Adventure/Mesh Generation
+E:/Mesh-Generation-Adventure/Mesh Generation
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 40.38 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.1f1 (77a89f25062f)
+[Subsystems] Discovering subsystems at path E:/Unity/2020.3.1f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path E:/Mesh-Generation-Adventure/Mesh Generation/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1660 SUPER (ID=0x21c4)
+    Vendor:   
+    VRAM:     5991 MB
+    Driver:   27.21.14.6627
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Initialize mono
+Mono path[0] = 'E:/Unity/2020.3.1f1/Editor/Data/Managed'
+Mono path[1] = 'E:/Unity/2020.3.1f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'E:/Unity/2020.3.1f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56936
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: E:/Unity/2020.3.1f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001328 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 42.56 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.455 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.001396 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 42.85 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.854 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.52 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2422 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 113.5 MB.
+System memory in use after: 113.7 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2865.
+Total: 2.559500 ms (FindLiveObjects: 0.299900 ms CreateObjectMapping: 0.061900 ms MarkObjects: 2.102500 ms  DeleteObjects: 0.093900 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Shaders/Movement.shadersubgraph
+  artifactKey: Guid(4aa129770d4fdc24ea7a7fba40e87ce4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/Movement.shadersubgraph using Guid(4aa129770d4fdc24ea7a7fba40e87ce4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad7bc2e854f382e3dfba998b9c49ce2c') in 0.091935 seconds
+  Import took 0.095775 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000265 seconds.
+  path: Assets/UniversalRenderPipelineAsset_Renderer.asset
+  artifactKey: Guid(dc2b58220e81dce4d8623b2ecb2dca48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UniversalRenderPipelineAsset_Renderer.asset using Guid(dc2b58220e81dce4d8623b2ecb2dca48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4fad256cbd27960bbe075d86c79651f') in 0.007491 seconds
+  Import took 0.011074 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000171 seconds.
+  path: Assets/Shaders/DepthFade.shadersubgraph
+  artifactKey: Guid(f569346f0834fde47b138895dfc9821e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/DepthFade.shadersubgraph using Guid(f569346f0834fde47b138895dfc9821e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f36738385c52e480978383c2e0efb590') in 0.005576 seconds
+  Import took 0.008947 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000180 seconds.
+  path: Assets/UniversalRenderPipelineAsset.asset
+  artifactKey: Guid(621c9c2c19fea2f48beb0267895fd469) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UniversalRenderPipelineAsset.asset using Guid(621c9c2c19fea2f48beb0267895fd469) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85bc3d51a55f261d4b9e58c80c01c5d2') in 0.007510 seconds
+  Import took 0.010524 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.514268 seconds.
+  path: Assets/Materials/Terrain.mat
+  artifactKey: Guid(726954e8b0449ee408350bfd472da7c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Terrain.mat using Guid(726954e8b0449ee408350bfd472da7c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0340afa34c95c1635d65776ed96ef347') in 0.183403 seconds
+  Import took 0.187108 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000203 seconds.
+  path: Assets/Materials/Water.mat
+  artifactKey: Guid(5e6c0cf4db60f61488ace466bed7d71b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Water.mat using Guid(5e6c0cf4db60f61488ace466bed7d71b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00422ae66f54ed4a807cc6d8bbcf4012') in 0.015190 seconds
+  Import took 0.018612 seconds .
+
+========================================================================
+Received Prepare
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.95 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 66.7 MB.
+System memory in use after: 66.9 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 2972.
+Total: 2.527400 ms (FindLiveObjects: 0.253100 ms CreateObjectMapping: 0.061800 ms MarkObjects: 2.162300 ms  DeleteObjects: 0.049700 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 278.834906 seconds.
+  path: Assets/Materials/Water.mat
+  artifactKey: Guid(5e6c0cf4db60f61488ace466bed7d71b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Water.mat using Guid(5e6c0cf4db60f61488ace466bed7d71b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12bdb8bc2940499ea51c63c15bd5be3c') in 0.017242 seconds
+  Import took 0.020845 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 162.284703 seconds.
+  path: Assets/Scripts/MeshGenerator.cs
+  artifactKey: Guid(738647bd8468d7a49afcc9acd7516c97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MeshGenerator.cs using Guid(738647bd8468d7a49afcc9acd7516c97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22800c2197564f96cc1fba1284dae6f7') in 0.025525 seconds
+  Import took 0.029174 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001029 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.38 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.714 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.48 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2312 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 113.0 MB.
+System memory in use after: 113.2 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 2948.
+Total: 1.869200 ms (FindLiveObjects: 0.237400 ms CreateObjectMapping: 0.060900 ms MarkObjects: 1.508800 ms  DeleteObjects: 0.061100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 160.973015 seconds.
+  path: Assets/Scripts/Noise.cs
+  artifactKey: Guid(9e42434e187f0ad45aa61f7663f353b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Noise.cs using Guid(9e42434e187f0ad45aa61f7663f353b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed46a2691869b17ad97c55b0fb5d37ba') in 0.007886 seconds
+  Import took 0.011264 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.070347 seconds.
+  path: Assets/Scripts/TerrainChunk.cs
+  artifactKey: Guid(029f0b441effbdd418921dda448b98c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/TerrainChunk.cs using Guid(029f0b441effbdd418921dda448b98c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3bd1d5ba3291bfe25743b5b78e9d9aa7') in 0.005639 seconds
+  Import took 0.009154 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.389771 seconds.
+  path: Assets/Scripts/TerrainSettings.cs
+  artifactKey: Guid(80d7fb0f8120ac042833a11de158f497) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/TerrainSettings.cs using Guid(80d7fb0f8120ac042833a11de158f497) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b94c7f5b71a7d28a1fc173187ec4897') in 0.005755 seconds
+  Import took 0.009321 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.975186 seconds.
+  path: Assets/Scripts/World.cs
+  artifactKey: Guid(59f0fddb561cc6b4ebb8c049727545fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/World.cs using Guid(59f0fddb561cc6b4ebb8c049727545fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '837eb816d438f97930a8038c8e00cf84') in 0.005292 seconds
+  Import took 0.008914 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001116 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.38 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.769 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.39 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2312 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 113.1 MB.
+System memory in use after: 113.3 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 2951.
+Total: 2.185000 ms (FindLiveObjects: 0.227100 ms CreateObjectMapping: 0.058700 ms MarkObjects: 1.841400 ms  DeleteObjects: 0.056900 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 626.530670 seconds.
+  path: Assets/Scripts/TerrainChunk.cs
+  artifactKey: Guid(029f0b441effbdd418921dda448b98c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/TerrainChunk.cs using Guid(029f0b441effbdd418921dda448b98c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d9653bc04b0772ee5e9fd690888af80') in 0.004616 seconds
+  Import took 0.007897 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001086 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.53 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.806 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.38 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2312 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 113.1 MB.
+System memory in use after: 113.3 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 2954.
+Total: 2.003200 ms (FindLiveObjects: 0.223600 ms CreateObjectMapping: 0.062900 ms MarkObjects: 1.651200 ms  DeleteObjects: 0.064500 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001213 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.39 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.817 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.50 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2312 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 113.1 MB.
+System memory in use after: 113.3 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 2957.
+Total: 2.139200 ms (FindLiveObjects: 0.272400 ms CreateObjectMapping: 0.061700 ms MarkObjects: 1.723600 ms  DeleteObjects: 0.080700 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 855.320297 seconds.
+  path: Assets/Materials/Water.mat
+  artifactKey: Guid(5e6c0cf4db60f61488ace466bed7d71b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Water.mat using Guid(5e6c0cf4db60f61488ace466bed7d71b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f74eb5dd6e021ab3f98f5236713bdfde') in 0.157234 seconds
+  Import took 0.161384 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001123 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.39 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.752 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.38 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2312 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 113.1 MB.
+System memory in use after: 113.3 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 2996.
+Total: 2.143500 ms (FindLiveObjects: 0.244100 ms CreateObjectMapping: 0.069700 ms MarkObjects: 1.767300 ms  DeleteObjects: 0.061500 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001185 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.44 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.800 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.45 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2312 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 113.2 MB.
+System memory in use after: 113.4 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 2999.
+Total: 2.071200 ms (FindLiveObjects: 0.269800 ms CreateObjectMapping: 0.063700 ms MarkObjects: 1.672600 ms  DeleteObjects: 0.064300 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001045 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.39 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.769 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.38 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2312 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 113.3 MB.
+System memory in use after: 113.4 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 3002.
+Total: 2.092600 ms (FindLiveObjects: 0.291900 ms CreateObjectMapping: 0.064400 ms MarkObjects: 1.672200 ms  DeleteObjects: 0.062600 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001329 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.38 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.736 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.43 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2312 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 113.3 MB.
+System memory in use after: 113.5 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 3005.
+Total: 2.100900 ms (FindLiveObjects: 0.342000 ms CreateObjectMapping: 0.065200 ms MarkObjects: 1.622600 ms  DeleteObjects: 0.070300 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001139 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.40 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.772 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.38 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2312 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 113.3 MB.
+System memory in use after: 113.5 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 3008.
+Total: 1.996600 ms (FindLiveObjects: 0.249100 ms CreateObjectMapping: 0.063000 ms MarkObjects: 1.612100 ms  DeleteObjects: 0.071400 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001113 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.37 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.741 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.53 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2312 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 113.2 MB.
+System memory in use after: 113.4 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 3011.
+Total: 2.066800 ms (FindLiveObjects: 0.235600 ms CreateObjectMapping: 0.061100 ms MarkObjects: 1.713100 ms  DeleteObjects: 0.056300 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001070 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.38 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.737 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.38 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2312 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 113.3 MB.
+System memory in use after: 113.5 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 3014.
+Total: 1.878500 ms (FindLiveObjects: 0.233800 ms CreateObjectMapping: 0.062800 ms MarkObjects: 1.529300 ms  DeleteObjects: 0.051700 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 1233.415411 seconds.
+  path: Assets/Scripts/Noise.cs
+  artifactKey: Guid(9e42434e187f0ad45aa61f7663f353b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Noise.cs using Guid(9e42434e187f0ad45aa61f7663f353b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19552928447ee9918692ac9edf367f92') in 0.004570 seconds
+  Import took 0.007742 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001408 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.40 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.722 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.39 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2312 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 113.3 MB.
+System memory in use after: 113.5 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 3017.
+Total: 2.182500 ms (FindLiveObjects: 0.261300 ms CreateObjectMapping: 0.061700 ms MarkObjects: 1.792100 ms  DeleteObjects: 0.066100 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001974 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.38 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.724 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.41 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2312 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 113.3 MB.
+System memory in use after: 113.5 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 3020.
+Total: 2.399000 ms (FindLiveObjects: 0.315200 ms CreateObjectMapping: 0.065900 ms MarkObjects: 1.950400 ms  DeleteObjects: 0.066400 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001043 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.49 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.783 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.43 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2312 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 113.3 MB.
+System memory in use after: 113.5 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 3023.
+Total: 2.025200 ms (FindLiveObjects: 0.262400 ms CreateObjectMapping: 0.061800 ms MarkObjects: 1.641000 ms  DeleteObjects: 0.059000 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001040 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.738 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.38 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2312 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 113.2 MB.
+System memory in use after: 113.4 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 3026.
+Total: 2.042500 ms (FindLiveObjects: 0.287100 ms CreateObjectMapping: 0.062700 ms MarkObjects: 1.635100 ms  DeleteObjects: 0.056600 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001143 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.39 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.708 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.42 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2312 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 113.3 MB.
+System memory in use after: 113.5 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 3029.
+Total: 2.031000 ms (FindLiveObjects: 0.248500 ms CreateObjectMapping: 0.062300 ms MarkObjects: 1.663700 ms  DeleteObjects: 0.055700 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001142 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.47 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.788 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.41 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2312 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 113.3 MB.
+System memory in use after: 113.5 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 3032.
+Total: 2.039300 ms (FindLiveObjects: 0.322100 ms CreateObjectMapping: 0.058400 ms MarkObjects: 1.601400 ms  DeleteObjects: 0.056800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001050 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.39 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.733 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.40 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2312 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 113.3 MB.
+System memory in use after: 113.5 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 3035.
+Total: 2.778100 ms (FindLiveObjects: 0.309200 ms CreateObjectMapping: 0.061500 ms MarkObjects: 2.339600 ms  DeleteObjects: 0.066600 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001184 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.43 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.772 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.43 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2312 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 113.3 MB.
+System memory in use after: 113.5 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 3038.
+Total: 2.092900 ms (FindLiveObjects: 0.342900 ms CreateObjectMapping: 0.061600 ms MarkObjects: 1.630000 ms  DeleteObjects: 0.057100 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001085 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.39 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.737 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.40 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2312 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 113.2 MB.
+System memory in use after: 113.4 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 3041.
+Total: 2.135300 ms (FindLiveObjects: 0.230600 ms CreateObjectMapping: 0.060100 ms MarkObjects: 1.781500 ms  DeleteObjects: 0.062000 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001037 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.37 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.758 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.39 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2312 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 113.3 MB.
+System memory in use after: 113.5 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 3044.
+Total: 2.131200 ms (FindLiveObjects: 0.243400 ms CreateObjectMapping: 0.068800 ms MarkObjects: 1.763800 ms  DeleteObjects: 0.054300 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001687 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.40 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.756 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.41 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2312 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 113.4 MB.
+System memory in use after: 113.5 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 3047.
+Total: 2.319400 ms (FindLiveObjects: 0.293700 ms CreateObjectMapping: 0.062800 ms MarkObjects: 1.900300 ms  DeleteObjects: 0.061400 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001090 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.42 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.765 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.36 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2312 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 113.4 MB.
+System memory in use after: 113.6 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 3050.
+Total: 1.988100 ms (FindLiveObjects: 0.249200 ms CreateObjectMapping: 0.068000 ms MarkObjects: 1.611100 ms  DeleteObjects: 0.058900 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001390 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.39 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.789 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.55 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2312 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 113.4 MB.
+System memory in use after: 113.6 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 3053.
+Total: 2.472600 ms (FindLiveObjects: 0.414900 ms CreateObjectMapping: 0.075800 ms MarkObjects: 1.917200 ms  DeleteObjects: 0.063800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001259 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.39 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.757 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.36 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2312 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 113.3 MB.
+System memory in use after: 113.5 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 3056.
+Total: 1.987200 ms (FindLiveObjects: 0.245600 ms CreateObjectMapping: 0.060000 ms MarkObjects: 1.622400 ms  DeleteObjects: 0.057900 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 1909.515058 seconds.
+  path: Assets/Scripts
+  artifactKey: Guid(cb0c0a38d88ce5849932f58a9ca73fa6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts using Guid(cb0c0a38d88ce5849932f58a9ca73fa6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aef6da7e719880ce6b77be495bbe158d') in 0.008267 seconds
+  Import took 0.011764 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.452543 seconds.
+  path: Assets/Scripts/LightingManager.cs
+  artifactKey: Guid(08e92f115a6151045ba34c07eb993af0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/LightingManager.cs using Guid(08e92f115a6151045ba34c07eb993af0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '458e4574568841daff13bc254f659199') in 0.005665 seconds
+  Import took 0.009220 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001072 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.38 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.739 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.36 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2313 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 113.4 MB.
+System memory in use after: 113.6 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 3060.
+Total: 2.026600 ms (FindLiveObjects: 0.267000 ms CreateObjectMapping: 0.068100 ms MarkObjects: 1.635200 ms  DeleteObjects: 0.055300 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 20.297275 seconds.
+  path: Assets/Scripts/LightingManager.cs
+  artifactKey: Guid(08e92f115a6151045ba34c07eb993af0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/LightingManager.cs using Guid(08e92f115a6151045ba34c07eb993af0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce0a4b0a860150ff5901590a417d3696') in 0.004531 seconds
+  Import took 0.008059 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.663378 seconds.
+  path: Assets/Scripts/LightingPreset.cs
+  artifactKey: Guid(103ed3cee857ece4b9759222a598eec4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/LightingPreset.cs using Guid(103ed3cee857ece4b9759222a598eec4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33bd2eaf901929d68f09c7daf64d6175') in 0.006385 seconds
+  Import took 0.010083 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001043 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.42 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.768 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.40 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2314 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 113.4 MB.
+System memory in use after: 113.6 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 3064.
+Total: 2.183300 ms (FindLiveObjects: 0.310200 ms CreateObjectMapping: 0.059200 ms MarkObjects: 1.754900 ms  DeleteObjects: 0.058200 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 27.047469 seconds.
+  path: Assets/Scripts/LightingPreset.cs
+  artifactKey: Guid(103ed3cee857ece4b9759222a598eec4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/LightingPreset.cs using Guid(103ed3cee857ece4b9759222a598eec4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '425795a6856f7bf61fc93bf7c7cd6e5f') in 0.005090 seconds
+  Import took 0.008956 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.511904 seconds.
+  path: Assets/Scriptable Objects
+  artifactKey: Guid(bfd94794d763e11418ff637c0a6f9b98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scriptable Objects using Guid(bfd94794d763e11418ff637c0a6f9b98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b70f21f828aaaf3359e44e2d9ef8ec3') in 0.005807 seconds
+  Import took 0.009664 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000764 seconds.
+  path: Assets/Scriptable Objects
+  artifactKey: Guid(bfd94794d763e11418ff637c0a6f9b98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scriptable Objects using Guid(bfd94794d763e11418ff637c0a6f9b98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b70f21f828aaaf3359e44e2d9ef8ec3') in 0.001857 seconds
+  Import took 0.005271 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.659472 seconds.
+  path: Assets/Scriptable Objects/Lighting Preset.asset
+  artifactKey: Guid(036910c6d3bd5b84faebf008cc0829c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scriptable Objects/Lighting Preset.asset using Guid(036910c6d3bd5b84faebf008cc0829c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b05e9e6ddb62fe5d1e6c3d07509e1215') in 0.016559 seconds
+  Import took 0.022708 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001148 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.54 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.812 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.57 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2312 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 113.4 MB.
+System memory in use after: 113.6 MB.
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 3065.
+Total: 2.481100 ms (FindLiveObjects: 0.298600 ms CreateObjectMapping: 0.063000 ms MarkObjects: 2.038300 ms  DeleteObjects: 0.080200 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001669 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.41 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.779 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.38 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2368 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 119.9 MB.
+System memory in use after: 116.3 MB.
+
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 3110.
+Total: 2.736200 ms (FindLiveObjects: 0.253100 ms CreateObjectMapping: 0.069900 ms MarkObjects: 1.620600 ms  DeleteObjects: 0.791700 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 103.518496 seconds.
+  path: Assets/Spoonie Tutorials/DayNight
+  artifactKey: Guid(abc435af6c4428c4f8583bc34c12af82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/DayNight using Guid(abc435af6c4428c4f8583bc34c12af82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd32507ccb5f6c5de9fb8e5a2d9a816e9') in 0.009497 seconds
+  Import took 0.013211 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.052143 seconds.
+  path: Assets/Spoonie Tutorials/DayNight/DefaultPreset.asset
+  artifactKey: Guid(90c3c66ae35e3b840be125e2619555e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/DayNight/DefaultPreset.asset using Guid(90c3c66ae35e3b840be125e2619555e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '906ff1cc2cb39b271b4f7f394cb675fb') in 0.015882 seconds
+  Import took 0.020471 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 30.664144 seconds.
+  path: Assets/Shaders/DepthFade.shadersubgraph
+  artifactKey: Guid(f569346f0834fde47b138895dfc9821e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/DepthFade.shadersubgraph using Guid(f569346f0834fde47b138895dfc9821e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad87785e2b17fa677b1d5c3a50eca9d6') in 0.007864 seconds
+  Import took 0.012158 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.311140 seconds.
+  path: Assets/Shaders
+  artifactKey: Guid(5a4e44e692e8f7b45a4d06f38ee642d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders using Guid(5a4e44e692e8f7b45a4d06f38ee642d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c38f13382b5cde5d275eceb30c91421') in 0.009655 seconds
+  Import took 0.013238 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.019806 seconds.
+  path: Assets/Shaders/New Material.mat
+  artifactKey: Guid(8070a2603886b7b488ad18e3b4dc4073) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/New Material.mat using Guid(8070a2603886b7b488ad18e3b4dc4073) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45364272eb595aba8ffb2940b125728a') in 0.135939 seconds
+  Import took 0.139885 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.531655 seconds.
+  path: Assets/Materials
+  artifactKey: Guid(1b43db79d57553e428a4d03bf4bf5f71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials using Guid(1b43db79d57553e428a4d03bf4bf5f71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14c4ab30ca6c21f1ca240b4f9ae42396') in 0.006083 seconds
+  Import took 0.009639 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.934180 seconds.
+  path: Assets/Materials/SkyBox.mat
+  artifactKey: Guid(fd06f57a7a8da3e44aa68c3550c43393) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/SkyBox.mat using Guid(fd06f57a7a8da3e44aa68c3550c43393) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1e7854e8f919af03d5c6ac95b5371c3') in 0.011723 seconds
+  Import took 0.015571 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 42.204317 seconds.
+  path: Assets/Materials/SkyBox.mat
+  artifactKey: Guid(fd06f57a7a8da3e44aa68c3550c43393) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/SkyBox.mat using Guid(fd06f57a7a8da3e44aa68c3550c43393) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e1f8726de9562c675cee3e68ece4567') in 0.013547 seconds
+  Import took 0.017706 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000700 seconds.
+  path: Assets/Materials/SkyBox.mat
+  artifactKey: Guid(fd06f57a7a8da3e44aa68c3550c43393) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/SkyBox.mat using Guid(fd06f57a7a8da3e44aa68c3550c43393) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e1f8726de9562c675cee3e68ece4567') in 0.011690 seconds
+  Import took 0.015396 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 33.499812 seconds.
+  path: Assets/Spoonie Tutorials/DayNight/LightingManager.cs
+  artifactKey: Guid(423d03fd2b3902e4ebab7d2f51a773a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/DayNight/LightingManager.cs using Guid(423d03fd2b3902e4ebab7d2f51a773a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '287d261854a6bc05a1c1fef402f751ed') in 0.005465 seconds
+  Import took 0.009031 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.019194 seconds.
+  path: Assets/Spoonie Tutorials/DayNight/LightingManager.cs
+  artifactKey: Guid(423d03fd2b3902e4ebab7d2f51a773a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/DayNight/LightingManager.cs using Guid(423d03fd2b3902e4ebab7d2f51a773a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '287d261854a6bc05a1c1fef402f751ed') in 0.001911 seconds
+  Import took 0.005528 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001066 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.41 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.805 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.39 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2367 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 119.8 MB.
+System memory in use after: 116.3 MB.
+
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 3149.
+Total: 3.122800 ms (FindLiveObjects: 0.263700 ms CreateObjectMapping: 0.064400 ms MarkObjects: 1.823200 ms  DeleteObjects: 0.970500 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 28.494837 seconds.
+  path: Assets/Spoonie Tutorials/DayNight/LightingManager.cs
+  artifactKey: Guid(423d03fd2b3902e4ebab7d2f51a773a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/DayNight/LightingManager.cs using Guid(423d03fd2b3902e4ebab7d2f51a773a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd6bcd41d11aac79fb053631c606eb82') in 0.004631 seconds
+  Import took 0.008069 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.813117 seconds.
+  path: Assets/Spoonie Tutorials/DayNight/LightingManager.cs
+  artifactKey: Guid(423d03fd2b3902e4ebab7d2f51a773a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/DayNight/LightingManager.cs using Guid(423d03fd2b3902e4ebab7d2f51a773a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd6bcd41d11aac79fb053631c606eb82') in 0.001890 seconds
+  Import took 0.005399 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001050 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.41 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.751 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.41 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2367 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 119.9 MB.
+System memory in use after: 116.4 MB.
+
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 3152.
+Total: 3.009800 ms (FindLiveObjects: 0.291300 ms CreateObjectMapping: 0.064100 ms MarkObjects: 1.643600 ms  DeleteObjects: 1.009900 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001361 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.45 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.811 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.41 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2367 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 120.0 MB.
+System memory in use after: 116.4 MB.
+
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 3155.
+Total: 3.363600 ms (FindLiveObjects: 0.319600 ms CreateObjectMapping: 0.065400 ms MarkObjects: 1.909500 ms  DeleteObjects: 1.068200 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 304.603424 seconds.
+  path: Assets/Editor
+  artifactKey: Guid(2dcb75c52f3c5404daebf5cd72958286) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Editor using Guid(2dcb75c52f3c5404daebf5cd72958286) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b461800194011ecbf9e76879f2db900') in 0.009393 seconds
+  Import took 0.013343 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 33.139958 seconds.
+  path: Assets/Spoonie Tutorials/Common/Materials/Grass.mat
+  artifactKey: Guid(3e2c462fa79bb1940b91c6dbd21adc74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/Common/Materials/Grass.mat using Guid(3e2c462fa79bb1940b91c6dbd21adc74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4b40a0876cf51df3d616d1dc071d998') in 0.152274 seconds
+  Import took 0.156595 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002508 seconds.
+  path: Assets/Spoonie Tutorials/Common/Standard Assets/Effects/ScreenSpaceReflection/ScreenSpaceReflection.cs
+  artifactKey: Guid(da3ff4a1bef2e8d47a1dfb734aa54de1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/Common/Standard Assets/Effects/ScreenSpaceReflection/ScreenSpaceReflection.cs using Guid(da3ff4a1bef2e8d47a1dfb734aa54de1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87233eb7db543e71a1b3a4fbc746f736') in 0.004746 seconds
+  Import took 0.008370 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002227 seconds.
+  path: Assets/Spoonie Tutorials/Common/Materials/Smoke.mat
+  artifactKey: Guid(32d0fe3ca248b704e900e5049c307347) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/Common/Materials/Smoke.mat using Guid(32d0fe3ca248b704e900e5049c307347) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88efcda61de29dcd27af859c01228ff5') in 0.142882 seconds
+  Import took 0.146358 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002164 seconds.
+  path: Assets/Spoonie Tutorials/Common/Standard Assets/Effects/Bloom/Resources/Bloom.shader
+  artifactKey: Guid(e45d4f28262b04d10a075856ab5fdb5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/Common/Standard Assets/Effects/Bloom/Resources/Bloom.shader using Guid(e45d4f28262b04d10a075856ab5fdb5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97b2f6b21df088a58f659300d27f91ef') in 0.008523 seconds
+  Import took 0.011955 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001376 seconds.
+  path: Assets/Spoonie Tutorials/Common/Standard Assets/Effects
+  artifactKey: Guid(6f0dffac9424f8240847c19cc1900186) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/Common/Standard Assets/Effects using Guid(6f0dffac9424f8240847c19cc1900186) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '590276535c8028584ac8be1ff7cbf189') in 0.004967 seconds
+  Import took 0.008263 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002520 seconds.
+  path: Assets/Spoonie Tutorials/Common/Shaders
+  artifactKey: Guid(7a8db1b846dc8cb40aef4cccaca62e6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/Common/Shaders using Guid(7a8db1b846dc8cb40aef4cccaca62e6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ff5b84aa1c85a469f32eeb02bbc69a7') in 0.001412 seconds
+  Import took 0.004657 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.003619 seconds.
+  path: Assets/Spoonie Tutorials/DayNight/LightingManager.cs
+  artifactKey: Guid(423d03fd2b3902e4ebab7d2f51a773a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/DayNight/LightingManager.cs using Guid(423d03fd2b3902e4ebab7d2f51a773a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19f717dc6c857c7ba39e9055c96ef0cc') in 0.001806 seconds
+  Import took 0.005082 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001441 seconds.
+  path: Assets/Spoonie Tutorials/Common/Standard Assets/Effects/AntiAliasing/SMAA/Editor
+  artifactKey: Guid(d4192bb80522be84e810d64eee9640bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/Common/Standard Assets/Effects/AntiAliasing/SMAA/Editor using Guid(d4192bb80522be84e810d64eee9640bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7b87661841773401e2db332fe489f77') in 0.001589 seconds
+  Import took 0.004823 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001837 seconds.
+  path: Assets/Spoonie Tutorials/Common/Standard Assets/Effects/AntiAliasing/SMAA/Editor/SMAAEditor.cs
+  artifactKey: Guid(5c2ffc06b5a6ee64d8e1d9bdf074732c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/Common/Standard Assets/Effects/AntiAliasing/SMAA/Editor/SMAAEditor.cs using Guid(5c2ffc06b5a6ee64d8e1d9bdf074732c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92f90eaa28faff2aabf0bff045167d50') in 0.004755 seconds
+  Import took 0.007504 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001883 seconds.
+  path: Assets/Spoonie Tutorials/Common/Standard Assets/Effects/AntiAliasing/IAntiAliasing.cs
+  artifactKey: Guid(90329fa7c7a616243a47de84e6e5c041) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/Common/Standard Assets/Effects/AntiAliasing/IAntiAliasing.cs using Guid(90329fa7c7a616243a47de84e6e5c041) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14afb5a943a2b0467ebe6fd8577e1be4') in 0.005104 seconds
+  Import took 0.008344 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001853 seconds.
+  path: Assets/Spoonie Tutorials/Common/Models/Tree.fbx
+  artifactKey: Guid(171a0d83b3aadc94787ebe7b2facc14b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/Common/Models/Tree.fbx using Guid(171a0d83b3aadc94787ebe7b2facc14b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e10724aeceae333331ef887d31d583ee') in 0.145787 seconds
+  Import took 0.150153 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.004900 seconds.
+  path: Assets/Spoonie Tutorials/Common/Standard Assets/Effects/AntiAliasing/SMAA/Resources
+  artifactKey: Guid(a965b2c84dfba3b42811c3b1402db147) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/Common/Standard Assets/Effects/AntiAliasing/SMAA/Resources using Guid(a965b2c84dfba3b42811c3b1402db147) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c159549cdd00a45062e5091f7d52f05') in 0.005515 seconds
+  Import took 0.009575 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002607 seconds.
+  path: Assets/Scripts/Noise.cs
+  artifactKey: Guid(9e42434e187f0ad45aa61f7663f353b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Noise.cs using Guid(9e42434e187f0ad45aa61f7663f353b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c3800b074338da4d710be7447e353eb') in 0.005965 seconds
+  Import took 0.010071 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002463 seconds.
+  path: Assets/Spoonie Tutorials/Common/Models/GrassTuft.fbx
+  artifactKey: Guid(5903470359baaf94b8dcf083848738cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/Common/Models/GrassTuft.fbx using Guid(5903470359baaf94b8dcf083848738cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9cc263497c8ac762535004369f7b2a6d') in 0.021880 seconds
+  Import took 0.025995 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.003977 seconds.
+  path: Assets/Editor/GUIButton.cs
+  artifactKey: Guid(d7489dc11aba9254e923ae791bbd1a2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Editor/GUIButton.cs using Guid(d7489dc11aba9254e923ae791bbd1a2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11a5d85aac2c156d65bc76022633b117') in 0.005197 seconds
+  Import took 0.008830 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001505 seconds.
+  path: Assets/Spoonie Tutorials/Common
+  artifactKey: Guid(204a684a8a65c2745b9c34054753215e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/Common using Guid(204a684a8a65c2745b9c34054753215e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce8e1050f8b253e4329733eef31480f9') in 0.005269 seconds
+  Import took 0.008878 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001524 seconds.
+  path: Assets/Spoonie Tutorials/Common/Standard Assets/Effects/Common
+  artifactKey: Guid(cd599e641c81ba44f92543c4024cd520) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/Common/Standard Assets/Effects/Common using Guid(cd599e641c81ba44f92543c4024cd520) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2a2ccbbb908d6e6ab741a8895d0009b') in 0.001881 seconds
+  Import took 0.005350 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001883 seconds.
+  path: Assets/Spoonie Tutorials/Common/Standard Assets/Effects/MotionBlur/Resources
+  artifactKey: Guid(423368f964a437245beb260b28366ca0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/Common/Standard Assets/Effects/MotionBlur/Resources using Guid(423368f964a437245beb260b28366ca0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8bdf83f32fd53a8dac54ef95dbbac4bf') in 0.001635 seconds
+  Import took 0.005083 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001677 seconds.
+  path: Assets/Spoonie Tutorials/Common/Standard Assets/Effects/TonemappingColorGrading
+  artifactKey: Guid(9c4749038c350fc4996922ae61ddd416) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/Common/Standard Assets/Effects/TonemappingColorGrading using Guid(9c4749038c350fc4996922ae61ddd416) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4be454d0295030eceda10b220f28a238') in 0.004808 seconds
+  Import took 0.008352 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002169 seconds.
+  path: Assets/Spoonie Tutorials/Common/Models/House.fbx
+  artifactKey: Guid(1c2744d0e5d03d4448b4731e8ccdc48b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/Common/Models/House.fbx using Guid(1c2744d0e5d03d4448b4731e8ccdc48b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3baa1d5ce4de96f72792027bf8372d4e') in 0.046884 seconds
+  Import took 0.050985 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002643 seconds.
+  path: Assets/Spoonie Tutorials/Common/Standard Assets/Effects/TemporalAntiAliasing/Editor/TemporalAntiAliasingEditor.cs
+  artifactKey: Guid(bd4dfc4e9eaf24ddbbf1b9a9e3a82bd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/Common/Standard Assets/Effects/TemporalAntiAliasing/Editor/TemporalAntiAliasingEditor.cs using Guid(bd4dfc4e9eaf24ddbbf1b9a9e3a82bd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23a38a5996414a403839c7bdadd978f0') in 0.005284 seconds
+  Import took 0.009207 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001992 seconds.
+  path: Assets/Spoonie Tutorials/Common/Materials/Stone.mat
+  artifactKey: Guid(5f0abcd08134d4449abe3dd06eb4098f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/Common/Materials/Stone.mat using Guid(5f0abcd08134d4449abe3dd06eb4098f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f79469d778c96cb8463fdc99cb0d3172') in 0.012831 seconds
+  Import took 0.016719 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002901 seconds.
+  path: Assets/Spoonie Tutorials/Common/Standard Assets/Effects/LensAberrations/Editor/LensAberrationsEditor.cs
+  artifactKey: Guid(8becb41f431ef90468376f6c5845e0bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/Common/Standard Assets/Effects/LensAberrations/Editor/LensAberrationsEditor.cs using Guid(8becb41f431ef90468376f6c5845e0bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96d50121db43c048384010b7f270b633') in 0.005349 seconds
+  Import took 0.009615 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002145 seconds.
+  path: Assets/Spoonie Tutorials/Common/Standard Assets/Effects/Common/Editor/FieldFinder.cs
+  artifactKey: Guid(39e54cb37a3a81a40b248f1cc25c4619) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/Common/Standard Assets/Effects/Common/Editor/FieldFinder.cs using Guid(39e54cb37a3a81a40b248f1cc25c4619) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '636ae2e5fd1c7795cf59408bf491849f') in 0.005608 seconds
+  Import took 0.009719 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002404 seconds.
+  path: Assets/Spoonie Tutorials/Common/Standard Assets/Effects/DepthOfField/Resources/DepthOfField.shader
+  artifactKey: Guid(bff0e5458fb914f5c9985ba4f09171d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/Common/Standard Assets/Effects/DepthOfField/Resources/DepthOfField.shader using Guid(bff0e5458fb914f5c9985ba4f09171d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43b758c8e2a7dcbe36265e4a3b6aad5a') in 0.007670 seconds
+  Import took 0.011674 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001682 seconds.
+  path: Assets/Spoonie Tutorials/Common/Standard Assets/Effects/Bloom/Resources
+  artifactKey: Guid(7c712bad2eb93de4f8ebd1ad15fbf512) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/Common/Standard Assets/Effects/Bloom/Resources using Guid(7c712bad2eb93de4f8ebd1ad15fbf512) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1cd6446827da8dfc086bffbea3d64d3e') in 0.001870 seconds
+  Import took 0.005584 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002678 seconds.
+  path: Assets/Spoonie Tutorials/Common/Standard Assets/Effects/MotionBlur/Helpers/Settings.cs
+  artifactKey: Guid(f3c5103e31dd947b295a294b9e8b42f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/Common/Standard Assets/Effects/MotionBlur/Helpers/Settings.cs using Guid(f3c5103e31dd947b295a294b9e8b42f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11ae64460fa12a66196d084757b23f7c') in 0.005548 seconds
+  Import took 0.009623 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001698 seconds.
+  path: Assets/Spoonie Tutorials/Common/Standard Assets/Effects/LensAberrations/Editor
+  artifactKey: Guid(624eceb32661f3447a1b0b788d9b722e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/Common/Standard Assets/Effects/LensAberrations/Editor using Guid(624eceb32661f3447a1b0b788d9b722e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9bf2cfb9683695c22e94407c0b26b3ac') in 0.001721 seconds
+  Import took 0.005315 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002520 seconds.
+  path: Assets/Spoonie Tutorials/Common/Standard Assets/Effects/TonemappingColorGrading/Editor/TonemappingColorGradingEditor.cs
+  artifactKey: Guid(64bb64b30a05a0d4b8afe58a356fc8fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/Common/Standard Assets/Effects/TonemappingColorGrading/Editor/TonemappingColorGradingEditor.cs using Guid(64bb64b30a05a0d4b8afe58a356fc8fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '308ba897ba2a00ba4ffba888ea2f9f00') in 0.005225 seconds
+  Import took 0.009026 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001659 seconds.
+  path: Assets/Spoonie Tutorials/Common/Standard Assets/Effects/DepthOfField
+  artifactKey: Guid(0de95825dd0df6f48a97eef10af165b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/Common/Standard Assets/Effects/DepthOfField using Guid(0de95825dd0df6f48a97eef10af165b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27c848139405e061267aecd809c413c5') in 0.001913 seconds
+  Import took 0.005755 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002208 seconds.
+  path: Assets/Spoonie Tutorials/Common/Standard Assets/Effects/AmbientOcclusion/Helpers/Settings.cs
+  artifactKey: Guid(e952a344c72354904a417d27abe6f55e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/Common/Standard Assets/Effects/AmbientOcclusion/Helpers/Settings.cs using Guid(e952a344c72354904a417d27abe6f55e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f38016b147269ed0c80b43f67b0734f') in 0.001708 seconds
+  Import took 0.005382 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002005 seconds.
+  path: Assets/Scripts/World.cs
+  artifactKey: Guid(59f0fddb561cc6b4ebb8c049727545fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/World.cs using Guid(59f0fddb561cc6b4ebb8c049727545fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a587edfa3459f7d08aeccb39fe1a411f') in 0.005062 seconds
+  Import took 0.008356 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002149 seconds.
+  path: Assets/Spoonie Tutorials/Common/Standard Assets/Effects/AntiAliasing/FXAA/FXAA.cs
+  artifactKey: Guid(8ca0fe85db4ef594fb0771b250c00e23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/Common/Standard Assets/Effects/AntiAliasing/FXAA/FXAA.cs using Guid(8ca0fe85db4ef594fb0771b250c00e23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b1a65bedff176b08904f35c364ff115') in 0.005808 seconds
+  Import took 0.009145 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001543 seconds.
+  path: Assets/Spoonie Tutorials/Common/Standard Assets/Effects/AntiAliasing/FXAA
+  artifactKey: Guid(a4941889335be7d4c9c7106f1818d32e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/Common/Standard Assets/Effects/AntiAliasing/FXAA using Guid(a4941889335be7d4c9c7106f1818d32e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5ec0cc8357262f92e2874f2b6c2d282') in 0.001850 seconds
+  Import took 0.005347 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.003538 seconds.
+  path: Assets/Spoonie Tutorials/Common/Standard Assets/Effects/MotionBlur/Editor/MotionBlurGraphDrawer.cs
+  artifactKey: Guid(5874959f591ba4dd790f04c32609afb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/Common/Standard Assets/Effects/MotionBlur/Editor/MotionBlurGraphDrawer.cs using Guid(5874959f591ba4dd790f04c32609afb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c96d81bc8684e4e8e86d9f37767a5ed') in 0.005281 seconds
+  Import took 0.008930 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002013 seconds.
+  path: Assets/Spoonie Tutorials/Common/Standard Assets/Effects/TonemappingColorGrading/Resources/HistogramCompute.compute
+  artifactKey: Guid(5ee4b74fa28a3e74e89423dd49705fc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/Common/Standard Assets/Effects/TonemappingColorGrading/Resources/HistogramCompute.compute using Guid(5ee4b74fa28a3e74e89423dd49705fc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35fcd25c2384577abe2ed1dfdd6e01c0') in 0.006413 seconds
+  Import took 0.009675 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002011 seconds.
+  path: Assets/Spoonie Tutorials/Common/Standard Assets/Effects/AmbientOcclusion/Helpers/PropertyObserver.cs
+  artifactKey: Guid(1d9548d9a173a40e4b758ecf6e4fed49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/Common/Standard Assets/Effects/AmbientOcclusion/Helpers/PropertyObserver.cs using Guid(1d9548d9a173a40e4b758ecf6e4fed49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '422b647cf1f033e73a957722fe486101') in 0.004808 seconds
+  Import took 0.008283 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.003249 seconds.
+  path: Assets/Spoonie Tutorials/Common/Standard Assets/Effects/Common/MinAttribute.cs
+  artifactKey: Guid(b07292ae638766047a6751da7552e566) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/Common/Standard Assets/Effects/Common/MinAttribute.cs using Guid(b07292ae638766047a6751da7552e566) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ffa2014e857e45626698620f4680eaca') in 0.004168 seconds
+  Import took 0.007501 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001975 seconds.
+  path: Assets/Spoonie Tutorials/Common/Standard Assets/Effects/AntiAliasing/Editor/AntiAliasingEditor.cs
+  artifactKey: Guid(6bd9375ab74a65448b556b0452e8c6af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/Common/Standard Assets/Effects/AntiAliasing/Editor/AntiAliasingEditor.cs using Guid(6bd9375ab74a65448b556b0452e8c6af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90115403cb0bed7207430bb9e386397a') in 0.004905 seconds
+  Import took 0.008529 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.004547 seconds.
+  path: Assets/Spoonie Tutorials/Common/Standard Assets/Effects/MotionBlur
+  artifactKey: Guid(15510e1cd374f2542a9d1b047e572694) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/Common/Standard Assets/Effects/MotionBlur using Guid(15510e1cd374f2542a9d1b047e572694) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0128f192e94f426d7d9d256fc85dcc8') in 0.004474 seconds
+  Import took 0.008206 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002529 seconds.
+  path: Assets/Spoonie Tutorials/Common/Standard Assets/Effects/AntiAliasing/FXAA/Resources
+  artifactKey: Guid(40de1209f6d8d8646bbfa72928c3e8f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/Common/Standard Assets/Effects/AntiAliasing/FXAA/Resources using Guid(40de1209f6d8d8646bbfa72928c3e8f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66fde1c69d63eac1684c9dedd8277a9c') in 0.001610 seconds
+  Import took 0.005253 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002072 seconds.
+  path: Assets/Spoonie Tutorials/Common/Standard Assets/Effects/Common/RenderTextureUtility.cs
+  artifactKey: Guid(054e694bae00c374a97c2bc495fca66b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/Common/Standard Assets/Effects/Common/RenderTextureUtility.cs using Guid(054e694bae00c374a97c2bc495fca66b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24a4db15f3fff102b5e4184e7b512c59') in 0.004079 seconds
+  Import took 0.007039 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002354 seconds.
+  path: Assets/Spoonie Tutorials/Common/Standard Assets/Effects/MotionBlur/Helpers/ReconstructionFilter.cs
+  artifactKey: Guid(bf41a0b22f9480e4991e24750bac3f1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/Common/Standard Assets/Effects/MotionBlur/Helpers/ReconstructionFilter.cs using Guid(bf41a0b22f9480e4991e24750bac3f1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30c29bc9418e57806971ac3f6c85b7d6') in 0.004886 seconds
+  Import took 0.008527 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001883 seconds.
+  path: Assets/Editor/ScriptableObjectDrawer.cs
+  artifactKey: Guid(9a1d56b960b2d944998bc35ee49bab89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Editor/ScriptableObjectDrawer.cs using Guid(9a1d56b960b2d944998bc35ee49bab89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d386b8065f05628cd957c3e94da3dd0') in 0.005179 seconds
+  Import took 0.008763 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002067 seconds.
+  path: Assets/Spoonie Tutorials/Common/Models/Rock2.fbx
+  artifactKey: Guid(c36a7a1a112f1ea4097abee89bb3b2b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/Common/Models/Rock2.fbx using Guid(c36a7a1a112f1ea4097abee89bb3b2b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9888f7aea1b7624c1a7fa23eb1d19a39') in 0.040812 seconds
+  Import took 0.044530 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.003176 seconds.
+  path: Assets/Spoonie Tutorials/Common/Skybox.mat
+  artifactKey: Guid(df7be524fc1b1ae428fa67c7275c4a23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/Common/Skybox.mat using Guid(df7be524fc1b1ae428fa67c7275c4a23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e29be530f9bbb82bbb48d199becc6bc1') in 0.011249 seconds
+  Import took 0.014825 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002462 seconds.
+  path: Assets/Editor/MonoBehaviourEditor.cs
+  artifactKey: Guid(d353881b34973394ab8e0528f7f00c36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Editor/MonoBehaviourEditor.cs using Guid(d353881b34973394ab8e0528f7f00c36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3cb0ace177727c9139ec513592c5452a') in 0.004630 seconds
+  Import took 0.008334 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001912 seconds.
+  path: Assets/Spoonie Tutorials/Common/Standard Assets/Effects/DepthOfField/Resources/MedianFilter.shader
+  artifactKey: Guid(a058b22d4123add4b807e832604e5e7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/Common/Standard Assets/Effects/DepthOfField/Resources/MedianFilter.shader using Guid(a058b22d4123add4b807e832604e5e7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36b359cfeb15d2f512e4b798fcd5240a') in 0.005426 seconds
+  Import took 0.008871 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001932 seconds.
+  path: Assets/Spoonie Tutorials/DayNight/LightingPreset.cs
+  artifactKey: Guid(85b819b8cb2b4c64f8e7269453e231c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/DayNight/LightingPreset.cs using Guid(85b819b8cb2b4c64f8e7269453e231c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0841bd966913556447f56c01e92216e2') in 0.004747 seconds
+  Import took 0.007704 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001727 seconds.
+  path: Assets/Spoonie Tutorials/Common/Standard Assets/Effects/AmbientOcclusion
+  artifactKey: Guid(be35e07f9edf08a48a1cf27eab722fc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/Common/Standard Assets/Effects/AmbientOcclusion using Guid(be35e07f9edf08a48a1cf27eab722fc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8906a8bdb6e29d446e3145d73f66c48') in 0.004667 seconds
+  Import took 0.007718 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001330 seconds.
+  path: Assets/Spoonie Tutorials
+  artifactKey: Guid(a6c58359854e1844fb8ec0d791ade1fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials using Guid(a6c58359854e1844fb8ec0d791ade1fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '468445d54a91b62144ea31960e880551') in 0.004921 seconds
+  Import took 0.007823 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002218 seconds.
+  path: Assets/Spoonie Tutorials/Common/Standard Assets/Effects/Common/Editor/EditorGUIHelper.cs
+  artifactKey: Guid(5b995f06a3ed14d449823cf7ab1c5a58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/Common/Standard Assets/Effects/Common/Editor/EditorGUIHelper.cs using Guid(5b995f06a3ed14d449823cf7ab1c5a58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4a0c966332e7dae40d4dd9b25fb830a') in 0.004573 seconds
+  Import took 0.007974 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001391 seconds.
+  path: Assets/Spoonie Tutorials/Common/Standard Assets/Effects/AntiAliasing/Editor
+  artifactKey: Guid(20dba976e0ed7114bbcac9f8705663ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/Common/Standard Assets/Effects/AntiAliasing/Editor using Guid(20dba976e0ed7114bbcac9f8705663ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1f4139cf924cd678c09b45f68336d38') in 0.001572 seconds
+  Import took 0.004899 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002051 seconds.
+  path: Assets/Scripts/TerrainChunk.cs
+  artifactKey: Guid(029f0b441effbdd418921dda448b98c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/TerrainChunk.cs using Guid(029f0b441effbdd418921dda448b98c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '609a49cdec7ecfc42b77c607844df0f6') in 0.001581 seconds
+  Import took 0.004569 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002743 seconds.
+  path: Assets/Spoonie Tutorials/Common/Standard Assets/Effects/LensAberrations
+  artifactKey: Guid(fb14a95707cd1cc4591a7563b8fc1dc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/Common/Standard Assets/Effects/LensAberrations using Guid(fb14a95707cd1cc4591a7563b8fc1dc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '393c03f3b070dd8758b06047c316cb34') in 0.004704 seconds
+  Import took 0.007923 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001977 seconds.
+  path: Assets/Shaders/TerrainShader.shadergraph
+  artifactKey: Guid(8f1677da863b8c5469d47dbe8ffe4858) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/TerrainShader.shadergraph using Guid(8f1677da863b8c5469d47dbe8ffe4858) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eca5424c9008e886f0e3c9811027c4bf') in 0.006526 seconds
+  Import took 0.009612 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001824 seconds.
+  path: Assets/Spoonie Tutorials/Common/Standard Assets/Effects/MotionBlur/Resources/Reconstruction.shader
+  artifactKey: Guid(7ea8cfee2809541fa81c5ed422ded933) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/Common/Standard Assets/Effects/MotionBlur/Resources/Reconstruction.shader using Guid(7ea8cfee2809541fa81c5ed422ded933) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6df30045399d28e4546fc7bb3623804') in 0.006170 seconds
+  Import took 0.009796 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002066 seconds.
+  path: Assets/Shaders/Water.shadergraph
+  artifactKey: Guid(57230f4dd7ba83b4487c5abb17fb02f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/Water.shadergraph using Guid(57230f4dd7ba83b4487c5abb17fb02f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd977dfeca68fe1fb3ef756511f19a486') in 0.001998 seconds
+  Import took 0.005354 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002166 seconds.
+  path: Assets/Spoonie Tutorials/Common/Standard Assets/Effects/AmbientOcclusion/Editor/AmbientOcclusionEditor.cs
+  artifactKey: Guid(05ea8e27ed8e74e67a9220b4f4119e51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/Common/Standard Assets/Effects/AmbientOcclusion/Editor/AmbientOcclusionEditor.cs using Guid(05ea8e27ed8e74e67a9220b4f4119e51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e2f508b38d10de876452b1da33b0571') in 0.004658 seconds
+  Import took 0.007938 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001744 seconds.
+  path: Assets/Spoonie Tutorials/Common/Standard Assets/Effects/MotionBlur/Helpers/FrameBlendingFilter.cs
+  artifactKey: Guid(187ff7782429646e69af39885c3b1779) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/Common/Standard Assets/Effects/MotionBlur/Helpers/FrameBlendingFilter.cs using Guid(187ff7782429646e69af39885c3b1779) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b5a2338d5605bf386e4d342fd1e5e81') in 0.004639 seconds
+  Import took 0.008110 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001813 seconds.
+  path: Assets/Spoonie Tutorials/Common/Standard Assets/Effects/ScreenSpaceReflection/Resources/ScreenSpaceReflection.shader
+  artifactKey: Guid(7e2fcc83af19e744787647ec0ac5d42c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/Common/Standard Assets/Effects/ScreenSpaceReflection/Resources/ScreenSpaceReflection.shader using Guid(7e2fcc83af19e744787647ec0ac5d42c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86d01464c4e9b10a9542741aed6c8007') in 0.002976 seconds
+  Import took 0.005927 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001382 seconds.
+  path: Assets/Spoonie Tutorials/Common/Standard Assets/Effects/ScreenSpaceReflection/Editor
+  artifactKey: Guid(414da0490767ac0418110ce85141f7ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/Common/Standard Assets/Effects/ScreenSpaceReflection/Editor using Guid(414da0490767ac0418110ce85141f7ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6ef70f2974e880d5b4f497ee76fbc99') in 0.001991 seconds
+  Import took 0.004661 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001867 seconds.
+  path: Assets/Spoonie Tutorials/Common/Standard Assets/Effects/MotionBlur/Editor/FrameBlendingIcon.png
+  artifactKey: Guid(d99d70716ed2e4735ba36a13b42f8e4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/Common/Standard Assets/Effects/MotionBlur/Editor/FrameBlendingIcon.png using Guid(d99d70716ed2e4735ba36a13b42f8e4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4372dceea6b813da090c2477aa55c62') in 0.065146 seconds
+  Import took 0.068280 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001795 seconds.
+  path: Assets/Spoonie Tutorials/Common/Standard Assets/Effects/TemporalAntiAliasing/Editor
+  artifactKey: Guid(9a0e1a3704a2d4048a520bdb6fef4d9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/Common/Standard Assets/Effects/TemporalAntiAliasing/Editor using Guid(9a0e1a3704a2d4048a520bdb6fef4d9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '362b10f8e7ccd6b5e9278401bd529986') in 0.001667 seconds
+  Import took 0.004945 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001696 seconds.
+  path: Assets/Spoonie Tutorials/Common/Standard Assets/Effects/MotionBlur/Editor
+  artifactKey: Guid(d7aeddafd58f0cc448a7da77d5b693df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/Common/Standard Assets/Effects/MotionBlur/Editor using Guid(d7aeddafd58f0cc448a7da77d5b693df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4339032d47e6605d0776d76600a4b20') in 0.001625 seconds
+  Import took 0.004796 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002211 seconds.
+  path: Assets/Spoonie Tutorials/Common/Standard Assets/Effects/LensAberrations/LensAberrations.cs
+  artifactKey: Guid(ff5335a7357baa3489a469d0ca0f40f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/Common/Standard Assets/Effects/LensAberrations/LensAberrations.cs using Guid(ff5335a7357baa3489a469d0ca0f40f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14d9207f9f76786c8cac5e5bd090b5cf') in 0.001738 seconds
+  Import took 0.004782 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001773 seconds.
+  path: Assets/Spoonie Tutorials/Common/Standard Assets
+  artifactKey: Guid(72084e4097afd5345ae784bf0b49c356) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/Common/Standard Assets using Guid(72084e4097afd5345ae784bf0b49c356) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b502cb3a9fa9a953a3a88a5ec4631ecf') in 0.004433 seconds
+  Import took 0.007661 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001796 seconds.
+  path: Assets/Spoonie Tutorials/Common/Standard Assets/Effects/DepthOfField/Resources
+  artifactKey: Guid(04258b3dcc911d449b9aba93fa36b71c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/Common/Standard Assets/Effects/DepthOfField/Resources using Guid(04258b3dcc911d449b9aba93fa36b71c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f9db5656b53be6eebbf95db475c2683') in 0.001516 seconds
+  Import took 0.004818 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001932 seconds.
+  path: Assets/Spoonie Tutorials/Common/Standard Assets/Effects/TonemappingColorGrading/Resources/TonemappingColorGrading.shader
+  artifactKey: Guid(964b34bbab7f5e64fa40f37eaccac1ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/Common/Standard Assets/Effects/TonemappingColorGrading/Resources/TonemappingColorGrading.shader using Guid(964b34bbab7f5e64fa40f37eaccac1ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae6a65e56ff76c67d3dc77f31b4bd0c7') in 0.002596 seconds
+  Import took 0.006091 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002121 seconds.
+  path: Assets/Spoonie Tutorials/Common/Standard Assets/Effects/AntiAliasing/AntiAliasing.cs
+  artifactKey: Guid(fdc35e0180670ab4e8d2f9439137791f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/Common/Standard Assets/Effects/AntiAliasing/AntiAliasing.cs using Guid(fdc35e0180670ab4e8d2f9439137791f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd991cd0cfc7105ec1d60eca4ae233bee') in 0.005159 seconds
+  Import took 0.008746 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001922 seconds.
+  path: Assets/Spoonie Tutorials/Common/Standard Assets/Effects/Bloom/Editor/BloomEditor.cs
+  artifactKey: Guid(38020a6029a85434a95a6f725a5aae5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/Common/Standard Assets/Effects/Bloom/Editor/BloomEditor.cs using Guid(38020a6029a85434a95a6f725a5aae5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b98dfd05ddcc8f739a57b0da26487f1a') in 0.004809 seconds
+  Import took 0.009373 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001839 seconds.
+  path: Assets/Spoonie Tutorials/Common/Standard Assets/Effects/AntiAliasing/FXAA/Editor
+  artifactKey: Guid(c1b9698b1239bbd4b979a6bd5b6ee245) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/Common/Standard Assets/Effects/AntiAliasing/FXAA/Editor using Guid(c1b9698b1239bbd4b979a6bd5b6ee245) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '236d8cbf6d5568987fc20bbadec398c2') in 0.001734 seconds
+  Import took 0.005171 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002202 seconds.
+  path: Assets/Spoonie Tutorials/Common/Standard Assets/Effects/MotionBlur/Editor/MotionBlurEditor.cs
+  artifactKey: Guid(b076bf0da2a7448bc8e39c3ccd7c2726) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/Common/Standard Assets/Effects/MotionBlur/Editor/MotionBlurEditor.cs using Guid(b076bf0da2a7448bc8e39c3ccd7c2726) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19490eaea7f88f31cdae8f5c92c32e6a') in 0.007548 seconds
+  Import took 0.038735 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.004673 seconds.
+  path: Assets/Spoonie Tutorials/Common/Standard Assets/Effects/TemporalAntiAliasing
+  artifactKey: Guid(db1c9cdfe74d04441ab96e7359b256c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/Common/Standard Assets/Effects/TemporalAntiAliasing using Guid(db1c9cdfe74d04441ab96e7359b256c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2727a16663af639f4d200373dace7fe6') in 0.005637 seconds
+  Import took 0.010494 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002286 seconds.
+  path: Assets/Spoonie Tutorials/Common/Shaders/ToonLit.shader
+  artifactKey: Guid(3a22a95fef36d3644ba90feb6072f455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/Common/Shaders/ToonLit.shader using Guid(3a22a95fef36d3644ba90feb6072f455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6043e1c5ad9e80090ce3515a2a091eb0') in 0.006486 seconds
+  Import took 0.010482 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001634 seconds.
+  path: Assets/Spoonie Tutorials/Common/Standard Assets/Effects/TonemappingColorGrading/Editor
+  artifactKey: Guid(5c4eb4d2e0a73c740b26b90ff2c5886c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/Common/Standard Assets/Effects/TonemappingColorGrading/Editor using Guid(5c4eb4d2e0a73c740b26b90ff2c5886c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '077c4760d47b6a841d7de10dbc0c5a60') in 0.001873 seconds
+  Import took 0.005698 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001950 seconds.
+  path: Assets/Spoonie Tutorials/Common/Standard Assets/Effects/AntiAliasing/Editor/IAntiAliasingEditor.cs
+  artifactKey: Guid(015ee83e537e9e4438f403e2149c69ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/Common/Standard Assets/Effects/AntiAliasing/Editor/IAntiAliasingEditor.cs using Guid(015ee83e537e9e4438f403e2149c69ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0528e2e206bb24772dcb578e89e19141') in 0.005124 seconds
+  Import took 0.008912 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001600 seconds.
+  path: Assets/Spoonie Tutorials/Common/Standard Assets/Effects/AmbientOcclusion/Resources
+  artifactKey: Guid(760ef6e5e0d868e48aa249daa2a3759d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/Common/Standard Assets/Effects/AmbientOcclusion/Resources using Guid(760ef6e5e0d868e48aa249daa2a3759d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce4aca1dbf5b8637404cfab042f6ab12') in 0.001539 seconds
+  Import took 0.004873 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001913 seconds.
+  path: Assets/Scenes/SampleScene.unity
+  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SampleScene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43d5b0b8847fe7d61f145837d40d1ef8') in 0.005444 seconds
+  Import took 0.009085 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002238 seconds.
+  path: Assets/Spoonie Tutorials/Common/Standard Assets/Effects/DepthOfField/Editor/DepthOfFieldEditor.cs
+  artifactKey: Guid(3eb07ef5681934662814cc768bcdb60c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/Common/Standard Assets/Effects/DepthOfField/Editor/DepthOfFieldEditor.cs using Guid(3eb07ef5681934662814cc768bcdb60c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6671c81bb2bec6ed310b887b834118b') in 0.004590 seconds
+  Import took 0.008128 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001949 seconds.
+  path: Assets/Spoonie Tutorials/Common/Standard Assets/Effects/DepthOfField/DepthOfField.cs
+  artifactKey: Guid(8a338d679868f45439ea43c7ae035e36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/Common/Standard Assets/Effects/DepthOfField/DepthOfField.cs using Guid(8a338d679868f45439ea43c7ae035e36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfb45a94f3e7bf5c93c647dc34890e4c') in 0.001804 seconds
+  Import took 0.004972 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002057 seconds.
+  path: Assets/Spoonie Tutorials/Common/Materials/Wood.mat
+  artifactKey: Guid(b883f0afdb5513047a29a80e73c6a62e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/Common/Materials/Wood.mat using Guid(b883f0afdb5513047a29a80e73c6a62e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2bc08436a7edf2bfb1f9cb7848fdbee5') in 0.011759 seconds
+  Import took 0.015796 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001942 seconds.
+  path: Assets/Spoonie Tutorials/Common/Standard Assets/Effects/AmbientOcclusion/Editor
+  artifactKey: Guid(4431642f3fde9194899e157445b3bad6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/Common/Standard Assets/Effects/AmbientOcclusion/Editor using Guid(4431642f3fde9194899e157445b3bad6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3622c562f3090fdc83d864f58e9bc560') in 0.001892 seconds
+  Import took 0.004979 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001963 seconds.
+  path: Assets/Spoonie Tutorials/Common/Models/Rock1.fbx
+  artifactKey: Guid(6b62e9f9819f9c941b6a676bfbc4055e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/Common/Models/Rock1.fbx using Guid(6b62e9f9819f9c941b6a676bfbc4055e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c234d26d7c4678dfe0d8e214be05709a') in 0.017018 seconds
+  Import took 0.021152 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001828 seconds.
+  path: Assets/Spoonie Tutorials/Common/Standard Assets/Effects/TonemappingColorGrading/Resources
+  artifactKey: Guid(3024d7536f3fecf499d5506a6d8f7d6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/Common/Standard Assets/Effects/TonemappingColorGrading/Resources using Guid(3024d7536f3fecf499d5506a6d8f7d6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '221cfc4222a28cd5634f442ef3aa63eb') in 0.001376 seconds
+  Import took 0.004530 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001736 seconds.
+  path: Assets/Spoonie Tutorials/Common/Materials/LightWood.mat
+  artifactKey: Guid(80c333d854a124d47aabcb13debae206) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/Common/Materials/LightWood.mat using Guid(80c333d854a124d47aabcb13debae206) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cebd99baefa31ebe5b0f660fabd84c73') in 0.012001 seconds
+  Import took 0.015596 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001856 seconds.
+  path: Assets/Spoonie Tutorials/Common/Standard Assets/Effects/Bloom
+  artifactKey: Guid(a62786480ff7f5949acfc473e24fee60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/Common/Standard Assets/Effects/Bloom using Guid(a62786480ff7f5949acfc473e24fee60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6497b1bf21bba4db491c1aa38935321') in 0.001265 seconds
+  Import took 0.004034 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001899 seconds.
+  path: Assets/Spoonie Tutorials/Common/Standard Assets/Effects/Common/ImageEffectHelper.cs
+  artifactKey: Guid(ab6a3f50deeee984c88794eeeb901226) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/Common/Standard Assets/Effects/Common/ImageEffectHelper.cs using Guid(ab6a3f50deeee984c88794eeeb901226) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f503bc9f9cd7dce2e31cd92c56be12bd') in 0.004480 seconds
+  Import took 0.007666 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001335 seconds.
+  path: Assets/Spoonie Tutorials/Common/Standard Assets/Effects/AntiAliasing/SMAA
+  artifactKey: Guid(3cc29868ab55e3d41a1d7ff0d27e1032) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/Common/Standard Assets/Effects/AntiAliasing/SMAA using Guid(3cc29868ab55e3d41a1d7ff0d27e1032) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b62a03ee5f7b477a44b2e880b17b7900') in 0.004410 seconds
+  Import took 0.007594 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002061 seconds.
+  path: Assets/Spoonie Tutorials/Common/Standard Assets/Effects/Bloom/Editor/BloomGraphDrawer.cs
+  artifactKey: Guid(e2d62b6f4e4eb4c6783477b5d99abdff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/Common/Standard Assets/Effects/Bloom/Editor/BloomGraphDrawer.cs using Guid(e2d62b6f4e4eb4c6783477b5d99abdff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8993a8205ef5b721c60e68f335ae538') in 0.005483 seconds
+  Import took 0.009394 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001522 seconds.
+  path: Assets/Spoonie Tutorials/Common/Standard Assets/Effects/MotionBlur/Helpers
+  artifactKey: Guid(77941849aca791f42bcbe5ebf8197d54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/Common/Standard Assets/Effects/MotionBlur/Helpers using Guid(77941849aca791f42bcbe5ebf8197d54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '487adeac71ca482f4bc353cc5706fc65') in 0.004749 seconds
+  Import took 0.008117 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.004828 seconds.
+  path: Assets/Spoonie Tutorials/Common/Standard Assets/Effects/DepthOfField/Editor
+  artifactKey: Guid(68cb0006b67773e44ae335e6e7366b1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/Common/Standard Assets/Effects/DepthOfField/Editor using Guid(68cb0006b67773e44ae335e6e7366b1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8d317e62c74f7ad1cf78c064d2c1b30') in 0.001493 seconds
+  Import took 0.005411 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001483 seconds.
+  path: Assets/Spoonie Tutorials/Common/Standard Assets/Effects/Common/Editor
+  artifactKey: Guid(1bfedb2390d115243a8a3f437e6b37df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/Common/Standard Assets/Effects/Common/Editor using Guid(1bfedb2390d115243a8a3f437e6b37df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f012a2d5d15c463db4692c19e0408a1') in 0.002027 seconds
+  Import took 0.005248 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002293 seconds.
+  path: Assets/Spoonie Tutorials/Common/Standard Assets/Effects/LensAberrations/Resources
+  artifactKey: Guid(6f8eec7161287964588e0c38b94de6a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/Common/Standard Assets/Effects/LensAberrations/Resources using Guid(6f8eec7161287964588e0c38b94de6a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '899e3931e33ddb4feffe80fe4f9bf452') in 0.001404 seconds
+  Import took 0.004557 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001719 seconds.
+  path: Assets/Spoonie Tutorials/Common/Standard Assets/Effects/MotionBlur/Resources/FrameBlending.shader
+  artifactKey: Guid(83da3aecb8b462f498946f5198cbd58e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/Common/Standard Assets/Effects/MotionBlur/Resources/FrameBlending.shader using Guid(83da3aecb8b462f498946f5198cbd58e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd86ef13ec10af6a72827104866c62618') in 0.007155 seconds
+  Import took 0.010382 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002000 seconds.
+  path: Assets/Spoonie Tutorials/Common/Standard Assets/Effects/TemporalAntiAliasing/TemporalAntiAliasing.cs
+  artifactKey: Guid(6bdfccaf741b3445e8c50a3e1eb59acc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/Common/Standard Assets/Effects/TemporalAntiAliasing/TemporalAntiAliasing.cs using Guid(6bdfccaf741b3445e8c50a3e1eb59acc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7914f40abe7620da0a1422bc747a3959') in 0.001660 seconds
+  Import took 0.005003 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001842 seconds.
+  path: Assets/Spoonie Tutorials/Common/Standard Assets/Effects/AntiAliasing/FXAA/Editor/FXAAEditor.cs
+  artifactKey: Guid(60bfb637c85e3e04ea76962349fee327) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/Common/Standard Assets/Effects/AntiAliasing/FXAA/Editor/FXAAEditor.cs using Guid(60bfb637c85e3e04ea76962349fee327) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7eddc9d474940a831f0f7fb10e36c888') in 0.004675 seconds
+  Import took 0.007608 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001817 seconds.
+  path: Assets/Spoonie Tutorials/Common/Standard Assets/Effects/AntiAliasing/FXAA/Resources/FXAA.shader
+  artifactKey: Guid(3eaaee164ee0fed4d9a0bbe8434805a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/Common/Standard Assets/Effects/AntiAliasing/FXAA/Resources/FXAA.shader using Guid(3eaaee164ee0fed4d9a0bbe8434805a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc895ea3183d84760dffd0b53ea88d5a') in 0.003196 seconds
+  Import took 0.006069 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001973 seconds.
+  path: Assets/Spoonie Tutorials/DayNight/DayNight.unity
+  artifactKey: Guid(5e2098ccd0aee90439246f00ec22b836) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/DayNight/DayNight.unity using Guid(5e2098ccd0aee90439246f00ec22b836) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92d17d5f619855151798f7adc04b4dcc') in 0.004998 seconds
+  Import took 0.008105 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001475 seconds.
+  path: Assets/Scenes
+  artifactKey: Guid(1f75766404d195448ac99980fb578a49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes using Guid(1f75766404d195448ac99980fb578a49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b300804f1d233e92ac8b5dd1ac1b6f74') in 0.004606 seconds
+  Import took 0.007553 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001496 seconds.
+  path: Assets/Spoonie Tutorials/Common/Standard Assets/Effects/AntiAliasing
+  artifactKey: Guid(54cd53a3906bc6c4f9eed5ca42fb9a7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/Common/Standard Assets/Effects/AntiAliasing using Guid(54cd53a3906bc6c4f9eed5ca42fb9a7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1af1a30df3b47b6f8d2364aabd0ad1d2') in 0.001596 seconds
+  Import took 0.004776 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001558 seconds.
+  path: Assets/Spoonie Tutorials/Common/Standard Assets/Effects/ScreenSpaceReflection
+  artifactKey: Guid(697f35b47bbaef34695e756c2e396d58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/Common/Standard Assets/Effects/ScreenSpaceReflection using Guid(697f35b47bbaef34695e756c2e396d58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37b3b39137da6c9570c75c3872b2d942') in 0.004833 seconds
+  Import took 0.007793 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001842 seconds.
+  path: Assets/Spoonie Tutorials/Common/Standard Assets/Effects/TonemappingColorGrading/Resources/HistogramRender.shader
+  artifactKey: Guid(9a8e838691462194482a43a02e424876) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/Common/Standard Assets/Effects/TonemappingColorGrading/Resources/HistogramRender.shader using Guid(9a8e838691462194482a43a02e424876) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa321a6ac96cf4ecf26fe9f87a49da80') in 0.005404 seconds
+  Import took 0.009062 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001837 seconds.
+  path: Assets/Spoonie Tutorials/Common/Standard Assets/Effects/AntiAliasing/SMAA/Resources/SMAA.shader
+  artifactKey: Guid(4505fec7a81214243b8e59edf89e3a53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/Common/Standard Assets/Effects/AntiAliasing/SMAA/Resources/SMAA.shader using Guid(4505fec7a81214243b8e59edf89e3a53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aeb2c22f75bb97e67650faa2af81b4f7') in 0.002444 seconds
+  Import took 0.005432 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.003642 seconds.
+  path: Assets/Scripts/FastNoiseLite.cs
+  artifactKey: Guid(c13f78f7d1397c441ac14a9774c4b66c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/FastNoiseLite.cs using Guid(c13f78f7d1397c441ac14a9774c4b66c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e6c72f7eac5fd9cbc0fac260acd3bcb') in 0.004614 seconds
+  Import took 0.008170 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001927 seconds.
+  path: Assets/Spoonie Tutorials/Common/Standard Assets/Effects/AmbientOcclusion/Resources/AmbientOcclusion.shader
+  artifactKey: Guid(65e203e5acda447acbf9dc1ef78c4a39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/Common/Standard Assets/Effects/AmbientOcclusion/Resources/AmbientOcclusion.shader using Guid(65e203e5acda447acbf9dc1ef78c4a39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04446c562c279e65b5aa8a0e27455951') in 0.003021 seconds
+  Import took 0.006199 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.003569 seconds.
+  path: Assets/Spoonie Tutorials/Common/Standard Assets/Effects/Bloom/Bloom.cs
+  artifactKey: Guid(32187365ced0c42219cde2b57c99b323) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/Common/Standard Assets/Effects/Bloom/Bloom.cs using Guid(32187365ced0c42219cde2b57c99b323) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e4099cc75bb92da45da90b898df3920') in 0.001331 seconds
+  Import took 0.004434 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001826 seconds.
+  path: Assets/Spoonie Tutorials/Common/Standard Assets/Effects/Common/Editor/MinDrawer.cs
+  artifactKey: Guid(9c615a85f13c6764fa4496d1d7f75f52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/Common/Standard Assets/Effects/Common/Editor/MinDrawer.cs using Guid(9c615a85f13c6764fa4496d1d7f75f52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91b661efd539c94666511f7d0b1400e5') in 0.004782 seconds
+  Import took 0.007899 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001647 seconds.
+  path: Assets/Spoonie Tutorials/Common/Materials
+  artifactKey: Guid(37fa69670cae3e542906ffda3b3adc55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/Common/Materials using Guid(37fa69670cae3e542906ffda3b3adc55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb656a499f843cc353bf74ce573b4657') in 0.001945 seconds
+  Import took 0.004899 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002323 seconds.
+  path: Assets/Spoonie Tutorials/Common/Standard Assets/Effects/AmbientOcclusion/AmbientOcclusion.cs
+  artifactKey: Guid(e89654dcf6db746d2a57aeaaa14f5e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/Common/Standard Assets/Effects/AmbientOcclusion/AmbientOcclusion.cs using Guid(e89654dcf6db746d2a57aeaaa14f5e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b03c91ce8bdd1064f8a7d96ee40cf18') in 0.001675 seconds
+  Import took 0.004661 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001434 seconds.
+  path: Assets/Spoonie Tutorials/Common/Models
+  artifactKey: Guid(9ce946eaeee252b4293e144bc90510bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/Common/Models using Guid(9ce946eaeee252b4293e144bc90510bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76ff863c8ea531083e3900d3740c456f') in 0.004865 seconds
+  Import took 0.008134 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001935 seconds.
+  path: Assets/Spoonie Tutorials/Common/Standard Assets/Effects/MotionBlur/MotionBlur.cs
+  artifactKey: Guid(704d27b9a5b954ee0a0d9bc010c245a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/Common/Standard Assets/Effects/MotionBlur/MotionBlur.cs using Guid(704d27b9a5b954ee0a0d9bc010c245a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d6dd87988b49df9f7469f6ac95b0196') in 0.001762 seconds
+  Import took 0.004583 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001275 seconds.
+  path: Assets/Spoonie Tutorials/Common/Standard Assets/Effects/AmbientOcclusion/Helpers
+  artifactKey: Guid(0300567bfcb33fd43852be7c6142c909) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/Common/Standard Assets/Effects/AmbientOcclusion/Helpers using Guid(0300567bfcb33fd43852be7c6142c909) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e98114a93d9d70f9e3a6a272060e325') in 0.001612 seconds
+  Import took 0.004147 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001866 seconds.
+  path: Assets/Spoonie Tutorials/Common/Standard Assets/Effects/TonemappingColorGrading/TonemappingColorGrading.cs
+  artifactKey: Guid(58a7625302996c94ba07a8ca3351f668) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/Common/Standard Assets/Effects/TonemappingColorGrading/TonemappingColorGrading.cs using Guid(58a7625302996c94ba07a8ca3351f668) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50416bc481f264ef6cca1c216b9786c1') in 0.001240 seconds
+  Import took 0.003712 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001733 seconds.
+  path: Assets/Spoonie Tutorials/Common/Materials/Roof.mat
+  artifactKey: Guid(32a18ced397588640b8ab80e36d37b88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/Common/Materials/Roof.mat using Guid(32a18ced397588640b8ab80e36d37b88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '040fa98979c7dfa505fb8de01f1111df') in 0.011329 seconds
+  Import took 0.014842 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001611 seconds.
+  path: Assets/Spoonie Tutorials/Common/Standard Assets/Effects/Bloom/Editor
+  artifactKey: Guid(c386ce0fe50b70340903ce2f90b6155e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/Common/Standard Assets/Effects/Bloom/Editor using Guid(c386ce0fe50b70340903ce2f90b6155e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '906528e90903a495414124f76b5b6110') in 0.001705 seconds
+  Import took 0.004922 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001977 seconds.
+  path: Assets/Spoonie Tutorials/Common/Standard Assets/Effects/DepthOfField/Resources/BokehSplatting.shader
+  artifactKey: Guid(c961b8ed1f00f924d804ada5143bd0e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/Common/Standard Assets/Effects/DepthOfField/Resources/BokehSplatting.shader using Guid(c961b8ed1f00f924d804ada5143bd0e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f36ddd3b4bb1ef18122465de2736a20') in 0.005305 seconds
+  Import took 0.008501 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001837 seconds.
+  path: Assets/Spoonie Tutorials/Common/Standard Assets/Effects/AntiAliasing/SMAA/SMAA.cs
+  artifactKey: Guid(9c2502951f8f3e743917c441eba57d1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/Common/Standard Assets/Effects/AntiAliasing/SMAA/SMAA.cs using Guid(9c2502951f8f3e743917c441eba57d1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8e4e8a6ed8de60eb7588a49f16a6ae4') in 0.001569 seconds
+  Import took 0.004584 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.023462 seconds.
+  path: Assets/Spoonie Tutorials/Common/Standard Assets/Effects/LensAberrations/Resources/LensAberrations.shader
+  artifactKey: Guid(136ab50fe2b9ad64d9c22adc3668abb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/Common/Standard Assets/Effects/LensAberrations/Resources/LensAberrations.shader using Guid(136ab50fe2b9ad64d9c22adc3668abb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd71fdd194b61efc3a46f0a0abd1a79b0') in 0.002522 seconds
+  Import took 0.005968 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001914 seconds.
+  path: Assets/Spoonie Tutorials/Common/Standard Assets/Effects/ScreenSpaceReflection/Editor/ScreenSpaceReflectionEditor.cs
+  artifactKey: Guid(eb0236f80884a1f4793c96b4d2da5c68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/Common/Standard Assets/Effects/ScreenSpaceReflection/Editor/ScreenSpaceReflectionEditor.cs using Guid(eb0236f80884a1f4793c96b4d2da5c68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15c13751904850cfb078707746cb5487') in 0.005013 seconds
+  Import took 0.008301 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001570 seconds.
+  path: Assets/Spoonie Tutorials/Common/Standard Assets/Effects/ScreenSpaceReflection/Resources
+  artifactKey: Guid(6e6197fdf05e3174d8bea6b332c5b141) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spoonie Tutorials/Common/Standard Assets/Effects/ScreenSpaceReflection/Resources using Guid(6e6197fdf05e3174d8bea6b332c5b141) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '850351fa54da1de368b67be1e892dbe3') in 0.016690 seconds
+  Import took 0.020172 seconds .
+
