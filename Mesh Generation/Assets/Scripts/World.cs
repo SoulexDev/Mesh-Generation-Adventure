@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class World : MonoBehaviour
 {
+    public Vector3 playerSpawnPosition;
+    private PlayerMovement player;
     private TerrainChunk terrainChunk;
     List<TerrainChunk> chunk = new List<TerrainChunk>();
     public Vector3 chunkPosition;
@@ -23,10 +25,18 @@ public class World : MonoBehaviour
     public LODS Lod;
     public TerrainSettings terrainSettings;
     public NoiseSettings noiseSettings;
+    private TestStructureScript testStructureScript;
+    private void Start()
+    {
+        player = FindObjectOfType<PlayerMovement>();
+        testStructureScript = FindObjectOfType<TestStructureScript>();
+    }
     public void StartGenerateWorld()
     {
         if (!generatingWorld)
         {
+            terrainSettings.mapCenter = new Vector3((terrainSettings.mapChunkSize * terrainSettings.chunkWidth) / 2, terrainSettings.terrainHeight, (terrainSettings.mapChunkSize* terrainSettings.chunkWidth) / 2);
+            playerSpawnPosition = terrainSettings.mapCenter;
             lockedHillCurve.keys = hillHeightCurve.keys;
             lockedMountainCurve.keys = mountainHeightCurve.keys;
             for (int c = 0; c < transform.childCount; c++)
@@ -35,6 +45,7 @@ public class World : MonoBehaviour
             }
             chunk.Clear();
             StartCoroutine(GenerateWorld());
+            testStructureScript.GenerateTrees();
         }
     }
     public IEnumerator GenerateWorld()
@@ -55,6 +66,7 @@ public class World : MonoBehaviour
             }
         }
         generatingWorld = false;
+        player.gameObject.transform.position = playerSpawnPosition;
     }
 }
 [System.Serializable]
@@ -110,4 +122,5 @@ public class TerrainSettings
     public int mapChunkSize = 16;
     [SerializeField]
     public float terrainHeight = 20;
+    public Vector3 mapCenter;
 }

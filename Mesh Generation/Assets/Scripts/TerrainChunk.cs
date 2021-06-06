@@ -14,6 +14,7 @@ public class TerrainChunk
     int[] waterTriangles;
     Mesh terrainMesh;
     Mesh waterMesh;
+    MeshCollider terrainCollider;
     World world;
     NoiseSettings noise;
     TerrainSettings terrainSettings;
@@ -22,7 +23,7 @@ public class TerrainChunk
     Vector2[] terrainUvs;
     private GameObject terrainChunkObject;
     private GameObject waterChunkObject;
-    public TerrainChunk Init(Vector3 pos)
+    public void Init(Vector3 pos)
     {
         terrainChunkObject = new GameObject();
         waterChunkObject = new GameObject();
@@ -32,6 +33,7 @@ public class TerrainChunk
         terrainMeshFilter = terrainChunkObject.AddComponent<MeshFilter>();
         waterMeshRenderer = waterChunkObject.AddComponent<MeshRenderer>();
         waterMeshFilter = waterChunkObject.AddComponent<MeshFilter>();
+        terrainCollider = terrainChunkObject.AddComponent<MeshCollider>();
         world = GameObject.FindObjectOfType<World>();
         noise = world.noiseSettings;
         lods = world.Lod;
@@ -48,7 +50,8 @@ public class TerrainChunk
         GenerateWaterChunk(pos);
         terrainMeshFilter.mesh = terrainMesh;
         waterMeshFilter.mesh = waterMesh;
-        return null;
+        terrainCollider.sharedMesh = terrainMesh;
+        terrainChunkObject.layer = 3;
     }
     public void GenerateTerrainChunk(Vector3 pos)
     {

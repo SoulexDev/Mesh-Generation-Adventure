@@ -4,10 +4,10 @@
 public class LightingManager : MonoBehaviour
 {
     //Scene References
-    [SerializeField] private Light DirectionalLight;
+    [SerializeField] public Light DirectionalLight;
     [SerializeField] private LightingPreset Preset;
     //Variables
-    [SerializeField, Range(0, 24)] private float TimeOfDay;
+    [SerializeField, Range(0, 24)] public float TimeOfDay;
     [SerializeField]
     public bool timeRunning = true;
 
@@ -20,7 +20,7 @@ public class LightingManager : MonoBehaviour
         if (Application.isPlaying && timeRunning)
         {
             //(Replace with a reference to the game time)
-            TimeOfDay += Time.deltaTime/24;
+            TimeOfDay += Time.deltaTime;
             TimeOfDay %= 24; //Modulus to ensure always between 0-24
             UpdateLighting(TimeOfDay / 24f);
         }
