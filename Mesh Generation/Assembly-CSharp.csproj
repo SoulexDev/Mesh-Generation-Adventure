@@ -61,18 +61,23 @@
     <Compile Include="Assets\Spoonie Tutorials\Common\Standard Assets\Effects\Bloom\Bloom.cs" />
     <Compile Include="Assets\Spoonie Tutorials\Common\Standard Assets\Effects\AmbientOcclusion\AmbientOcclusion.cs" />
     <Compile Include="Assets\Spoonie Tutorials\DayNight\LightingManager.cs" />
+    <Compile Include="Assets\Shaders\GeometryGrassPainter.cs" />
     <Compile Include="Assets\Scripts\World.cs" />
     <Compile Include="Assets\Spoonie Tutorials\Common\Standard Assets\Effects\LensAberrations\LensAberrations.cs" />
     <Compile Include="Assets\Spoonie Tutorials\Common\Standard Assets\Effects\AntiAliasing\SMAA\SMAA.cs" />
+    <Compile Include="Assets\Scripts\CameraMovement.cs" />
     <Compile Include="Assets\Spoonie Tutorials\Common\Standard Assets\Effects\TemporalAntiAliasing\TemporalAntiAliasing.cs" />
     <Compile Include="Assets\Scripts\FastNoiseLite.cs" />
     <Compile Include="Assets\Spoonie Tutorials\Common\Standard Assets\Effects\TonemappingColorGrading\TonemappingColorGrading.cs" />
     <Compile Include="Assets\Spoonie Tutorials\Common\Standard Assets\Effects\AmbientOcclusion\Helpers\PropertyObserver.cs" />
     <Compile Include="Assets\Spoonie Tutorials\Common\Standard Assets\Effects\MotionBlur\Helpers\FrameBlendingFilter.cs" />
+    <Compile Include="Assets\Scripts\FakeStarSkyboxController.cs" />
     <Compile Include="Assets\Spoonie Tutorials\Common\Standard Assets\Effects\ScreenSpaceReflection\ScreenSpaceReflection.cs" />
+    <Compile Include="Assets\Scripts\Structure.cs" />
     <Compile Include="Assets\Spoonie Tutorials\Common\Standard Assets\Effects\DepthOfField\DepthOfField.cs" />
     <Compile Include="Assets\Spoonie Tutorials\Common\Standard Assets\Effects\MotionBlur\MotionBlur.cs" />
     <Compile Include="Assets\Spoonie Tutorials\Common\Standard Assets\Effects\Common\MinAttribute.cs" />
+    <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\MeshGenerator.cs" />
     <Compile Include="Assets\Spoonie Tutorials\Common\Standard Assets\Effects\AmbientOcclusion\Helpers\Settings.cs" />
     <Compile Include="Assets\Spoonie Tutorials\Common\Standard Assets\Effects\AntiAliasing\AntiAliasing.cs" />
@@ -81,14 +86,9 @@
     <Compile Include="Assets\Spoonie Tutorials\Common\Standard Assets\Effects\MotionBlur\Helpers\ReconstructionFilter.cs" />
     <Compile Include="Assets\Spoonie Tutorials\Common\Standard Assets\Effects\MotionBlur\Helpers\Settings.cs" />
     <Compile Include="Assets\Spoonie Tutorials\DayNight\LightingPreset.cs" />
-    <Compile Include="Assets\Spoonie Tutorials\Common\Standard Assets\Effects\Common\ImageEffectHelper.cs" />
-    <Compile Include="Assets\Scripts\PlayerMovement.cs" />
-    <Compile Include="Assets\Scripts\CameraMovement.cs" />
-    <Compile Include="Assets\Shaders\GeometryGrassPainter.cs" />
     <Compile Include="Assets\Shaders\GrassPainterEditor.cs" />
-    <Compile Include="Assets\Scripts\Structure.cs" />
-    <Compile Include="Assets\Scripts\FakeStarSkyboxController.cs" />
-    <Compile Include="Assets\Scripts\TestStructureScript.cs" />
+    <Compile Include="Assets\Spoonie Tutorials\Common\Standard Assets\Effects\Common\ImageEffectHelper.cs" />
+    <Compile Include="Assets\Scripts\StructureGeneration.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Spoonie Tutorials\Common\Standard Assets\Effects\DepthOfField\Resources\MedianFilter.shader" />
@@ -745,13 +745,13 @@
       <Project>{53B38468-4805-1043-5D60-324939307487}</Project>
       <Name>Boxophobic.SkyboxCubemapExtended.Editor</Name>
     </ProjectReference>
-    <ProjectReference Include="Boxophobic.Utils.Editor.csproj">
-      <Project>{46223D0C-81C2-4B26-B899-F68C44FBD948}</Project>
-      <Name>Boxophobic.Utils.Editor</Name>
-    </ProjectReference>
     <ProjectReference Include="Boxophobic.Utils.Scripts.csproj">
       <Project>{12C12F75-BFB4-4327-CDF3-3A0BC20D56EF}</Project>
       <Name>Boxophobic.Utils.Scripts</Name>
+    </ProjectReference>
+    <ProjectReference Include="Boxophobic.Utils.Editor.csproj">
+      <Project>{46223D0C-81C2-4B26-B899-F68C44FBD948}</Project>
+      <Name>Boxophobic.Utils.Editor</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

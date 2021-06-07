@@ -25,11 +25,11 @@ public class World : MonoBehaviour
     public LODS Lod;
     public TerrainSettings terrainSettings;
     public NoiseSettings noiseSettings;
-    private TestStructureScript testStructureScript;
+    public StructureGeneration structureGeneration;
     private void Start()
     {
         player = FindObjectOfType<PlayerMovement>();
-        testStructureScript = FindObjectOfType<TestStructureScript>();
+        structureGeneration = FindObjectOfType<StructureGeneration>();
     }
     public void StartGenerateWorld()
     {
@@ -45,7 +45,6 @@ public class World : MonoBehaviour
             }
             chunk.Clear();
             StartCoroutine(GenerateWorld());
-            testStructureScript.GenerateTrees();
         }
     }
     public IEnumerator GenerateWorld()

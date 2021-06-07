@@ -36,7 +36,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - StarAlpha: 0.5359967
+    - StarAlpha: 1.001
     - Vector1_2b31557132e141ca9146f3efab015234: 1
     - Vector1_b1a144f7813a4c6e83a6e709d0f22d42: 5000
     m_Colors: []

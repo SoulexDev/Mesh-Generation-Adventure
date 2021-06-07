@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Oak Trees
   m_EditorClassIdentifier: 
   prefabObject: {fileID: 2211813159111314896, guid: 06cfe0975df9d694daa8f56d92231284, type: 3}
-  scatterAmount: 0.6
-  regionDensity: 256
+  scatterAmount: 0.5
+  regionDensity: 3

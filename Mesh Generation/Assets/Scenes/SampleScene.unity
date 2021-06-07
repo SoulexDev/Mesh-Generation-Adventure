@@ -215,50 +215,6 @@ Transform:
   m_Father: {fileID: 175860864}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &334568872
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 334568874}
-  - component: {fileID: 334568873}
-  m_Layer: 0
-  m_Name: TreeSpawner
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &334568873
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 334568872}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 22c7c96332994f64d8d28494323caf37, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  structure: {fileID: 11400000, guid: 75cca691e64c43446805862c3ba24360, type: 2}
---- !u!4 &334568874
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 334568872}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &682362620
 GameObject:
   m_ObjectHideFlags: 0
@@ -572,6 +528,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1454789275}
   - component: {fileID: 1454789276}
+  - component: {fileID: 1454789277}
   m_Layer: 0
   m_Name: World
   m_TagString: Untagged
@@ -723,6 +680,20 @@ MonoBehaviour:
     hillLacunarity: 1.6
     hillOctaves: 9
     hillFrequency: 0.4
+  structureGeneration: {fileID: 1454789277}
+--- !u!114 &1454789277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1454789274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04eaf626286c82c418bfe54d1696d0c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  structure: {fileID: 11400000, guid: 75cca691e64c43446805862c3ba24360, type: 2}
 --- !u!1 &1489808773
 GameObject:
   m_ObjectHideFlags: 0

@@ -23,6 +23,7 @@ public class TerrainChunk
     Vector2[] terrainUvs;
     private GameObject terrainChunkObject;
     private GameObject waterChunkObject;
+    public StructureGeneration structureGeneration;
     public void Init(Vector3 pos)
     {
         terrainChunkObject = new GameObject();
@@ -37,6 +38,7 @@ public class TerrainChunk
         world = GameObject.FindObjectOfType<World>();
         noise = world.noiseSettings;
         lods = world.Lod;
+        structureGeneration = world.structureGeneration;
         terrainSettings = world.terrainSettings;
         terrainChunkObject.transform.SetParent(world.transform);
         waterChunkObject.transform.SetParent(world.transform);
@@ -47,6 +49,7 @@ public class TerrainChunk
         terrainMesh.Clear();
         waterMesh.Clear();
         GenerateTerrainChunk(pos);
+        Debug.Log(pos);
         GenerateWaterChunk(pos);
         terrainMeshFilter.mesh = terrainMesh;
         waterMeshFilter.mesh = waterMesh;
@@ -55,6 +58,7 @@ public class TerrainChunk
     }
     public void GenerateTerrainChunk(Vector3 pos)
     {
+        structureGeneration.GenerateStructure(pos, terrainChunkObject.transform);
         int levelOfDetail = (int)lods.levelsOfDetail;
         int terrainLOD = terrainSettings.chunkWidth / levelOfDetail;
         terrainVertices = new Vector3[(terrainLOD + 1) * (terrainLOD + 1)];
