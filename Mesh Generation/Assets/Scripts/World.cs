@@ -25,6 +25,7 @@ public class World : MonoBehaviour
     public LODS Lod;
     public TerrainSettings terrainSettings;
     public NoiseSettings noiseSettings;
+    public Structure[] structure;
     public StructureGeneration structureGeneration;
     private void Start()
     {
@@ -122,4 +123,13 @@ public class TerrainSettings
     [SerializeField]
     public float terrainHeight = 20;
     public Vector3 mapCenter;
+}
+[System.Serializable]
+public class Structure
+{
+    public string structureName;
+    public GameObject prefabObject;
+    public int structureID;
+    public float scatterAmount;
+    public float regionDensity;
 }

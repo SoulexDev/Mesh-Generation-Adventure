@@ -49,7 +49,6 @@ public class TerrainChunk
         terrainMesh.Clear();
         waterMesh.Clear();
         GenerateTerrainChunk(pos);
-        Debug.Log(pos);
         GenerateWaterChunk(pos);
         terrainMeshFilter.mesh = terrainMesh;
         waterMeshFilter.mesh = waterMesh;
@@ -58,7 +57,8 @@ public class TerrainChunk
     }
     public void GenerateTerrainChunk(Vector3 pos)
     {
-        structureGeneration.GenerateStructure(pos, terrainChunkObject.transform);
+        if(structureGeneration != null)
+            structureGeneration.GenerateStructure(pos, terrainChunkObject.transform, 0);
         int levelOfDetail = (int)lods.levelsOfDetail;
         int terrainLOD = terrainSettings.chunkWidth / levelOfDetail;
         terrainVertices = new Vector3[(terrainLOD + 1) * (terrainLOD + 1)];
