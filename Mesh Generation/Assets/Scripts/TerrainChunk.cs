@@ -21,7 +21,8 @@ public class TerrainChunk
     LODS lods;
     Vector2[] waterUvs;
     Vector2[] terrainUvs;
-    private GameObject terrainChunkObject;
+    [HideInInspector]
+    public GameObject terrainChunkObject;
     private GameObject waterChunkObject;
     public StructureGeneration structureGeneration;
     public void Init(Vector3 pos)
@@ -41,7 +42,7 @@ public class TerrainChunk
         structureGeneration = world.structureGeneration;
         terrainSettings = world.terrainSettings;
         terrainChunkObject.transform.SetParent(world.transform);
-        waterChunkObject.transform.SetParent(world.transform);
+        waterChunkObject.transform.SetParent(terrainChunkObject.transform);
         terrainChunkObject.name = "TerrainChunk " + (pos.x / terrainSettings.chunkWidth).ToString() + ", " + (pos.z / terrainSettings.chunkWidth).ToString();
         waterChunkObject.name = "WaterChunk " + (pos.x / terrainSettings.chunkWidth).ToString() + ", " + (pos.z / terrainSettings.chunkWidth).ToString();
         terrainMesh = new Mesh();
@@ -66,7 +67,7 @@ public class TerrainChunk
         {
             for (int x = 0; x <= terrainSettings.chunkWidth; x+= levelOfDetail)
             {
-                float terrainY = noise.GetTerrainGenerationFromNoise(new Vector3(x + pos.x,0,z + pos.z), terrainSettings.chunkWidth, 1, world.lockedMountainCurve, world.lockedHillCurve);
+                float terrainY = noise.GetTerrainGenerationFromNoise(new Vector3(x + pos.x,0,z + pos.z), terrainSettings.chunkWidth, 1, world.lockedMountainCurve, world.lockedHillCurve, 0);
                 terrainVertices[i] = new Vector3(x, terrainY * terrainSettings.terrainHeight, z);
                 i++;
             }
