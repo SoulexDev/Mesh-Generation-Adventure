@@ -8,6 +8,7 @@ public class TerrainChunk
     private MeshFilter terrainMeshFilter;
     public MeshRenderer waterMeshRenderer;
     private MeshFilter waterMeshFilter;
+    public int LODIndex;
     Vector3[] terrainVertices;
     int[] terrainTriangles;
     Vector3[] waterVertices;
@@ -24,6 +25,7 @@ public class TerrainChunk
     [HideInInspector]
     public GameObject terrainChunkObject;
     private GameObject waterChunkObject;
+    [SerializeField] protected float distanceFromPlayer;
     public StructureGeneration structureGeneration;
     public void Init(Vector3 pos)
     {
@@ -49,18 +51,27 @@ public class TerrainChunk
         waterMesh = new Mesh();
         terrainMesh.Clear();
         waterMesh.Clear();
-        GenerateTerrainChunk(pos);
+        GenerateTerrainChunk(pos, 1);
         GenerateWaterChunk(pos);
         terrainMeshFilter.mesh = terrainMesh;
         waterMeshFilter.mesh = waterMesh;
         terrainCollider.sharedMesh = terrainMesh;
         terrainChunkObject.layer = 3;
     }
-    public void GenerateTerrainChunk(Vector3 pos)
+    public float ChunkDistanceFromPlayer(Vector3 playerPostion)
     {
-        if(structureGeneration != null)
+        return distanceFromPlayer = new Vector2(playerPostion.x - terrainChunkObject.transform.position.x, playerPostion.z - terrainChunkObject.transform.position.z).sqrMagnitude;
+    }
+    public float ChunkLODRadiusFromPlayer(Vector3 playerPosition, float radius)
+    {
+        return new Vector2(playerPosition.x + radius - terrainChunkObject.transform.position.x, playerPosition.z + radius - terrainChunkObject.transform.position.z).sqrMagnitude;
+    }
+    public void GenerateTerrainChunk(Vector3 pos, int LODvalue)
+    {
+        LODIndex = LODvalue;
+        if (structureGeneration != null)
             structureGeneration.GenerateStructure(pos, terrainChunkObject.transform, 0);
-        int levelOfDetail = (int)lods.levelsOfDetail;
+        int levelOfDetail = LODvalue;
         int terrainLOD = terrainSettings.chunkWidth / levelOfDetail;
         terrainVertices = new Vector3[(terrainLOD + 1) * (terrainLOD + 1)];
         for (int i = 0, z = 0; z <= terrainSettings.chunkWidth; z+= levelOfDetail)

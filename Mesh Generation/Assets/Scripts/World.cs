@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class World : MonoBehaviour
 {
+    [HideInInspector]
     public Vector3 playerSpawnPosition;
-    int renderDistance = 4;
-    Vector3 renderDistanceInUnits;
-    Vector3 renderDistanceAroundPlayer;
+    int renderDistanceInChunks = 32;
+    public float unitRenderDistance;
+    public float LODradiusOne, LODradiusTwo, LODradiusThree;
     private PlayerMovement player;
     private TerrainChunk terrainChunk;
     List<TerrainChunk> chunk = new List<TerrainChunk>();
@@ -32,17 +33,18 @@ public class World : MonoBehaviour
     public Spawnable[] spawnables;
     public Biome[] biomes;
     public StructureGeneration structureGeneration;
-    public List<TerrainChunk> activeChunks = new List<TerrainChunk>();
-    public List<TerrainChunk> inactiveChunks = new List<TerrainChunk>();
     private void Start()
     {
         player = FindObjectOfType<PlayerMovement>();
         structureGeneration = FindObjectOfType<StructureGeneration>();
-        renderDistanceInUnits = new Vector3(terrainSettings.chunkWidth * renderDistance, 0, terrainSettings.chunkWidth * renderDistance);
+        unitRenderDistance = renderDistanceInChunks * terrainSettings.chunkWidth * 100;
+        LODradiusOne = unitRenderDistance / 3;
+        LODradiusTwo = LODradiusOne * 2;
+        LODradiusThree = unitRenderDistance;
+        Debug.Log($"RadiusOne{LODradiusOne}RadiusTwo{LODradiusTwo}RadiusThree{LODradiusThree}");
     }
     private void Update()
     {
-        renderDistanceAroundPlayer = renderDistanceInUnits + player.transform.position;
         UpdateChunks();
     }
     public void StartGenerateWorld()
@@ -83,19 +85,22 @@ public class World : MonoBehaviour
     }
     void UpdateChunks()
     {
-        foreach (TerrainChunk activeChunk in activeChunks)
+        for (int i = 0; i < chunk.Count; i++)
         {
-            if (chunkPosition.x < renderDistanceAroundPlayer.x && chunkPosition.y < renderDistanceAroundPlayer.y)
-                activeChunks.RemoveAt(0);
-            if (!activeChunk.terrainChunkObject.activeSelf)
-                activeChunk.terrainChunkObject.SetActive(true);
-        }
-        foreach (TerrainChunk inactiveChunk in inactiveChunks)
-        {
-            if (chunkPosition.x > renderDistanceAroundPlayer.x && chunkPosition.y > renderDistanceAroundPlayer.y)
-                inactiveChunks.RemoveAt(0);
-            if (inactiveChunk.terrainChunkObject.activeSelf)
-                inactiveChunk.terrainChunkObject.SetActive(false);
+            if (chunk[i].ChunkDistanceFromPlayer(player.transform.position) > unitRenderDistance)
+            {
+                if (chunk[i].terrainChunkObject.activeSelf)
+                    chunk[i].terrainChunkObject.SetActive(false);
+            }
+            else if(!chunk[i].terrainChunkObject.activeSelf)
+                chunk[i].terrainChunkObject.SetActive(true);
+
+            if (chunk[i].terrainChunkObject.transform.position.sqrMagnitude <= chunk[i].ChunkLODRadiusFromPlayer(player.transform.position, LODradiusOne) && chunk[i].LODIndex != 1)
+                chunk[i].GenerateTerrainChunk(chunk[i].terrainChunkObject.transform.position, 1);
+            else if (chunk[i].terrainChunkObject.transform.position.sqrMagnitude <= chunk[i].ChunkLODRadiusFromPlayer(player.transform.position, LODradiusTwo) && chunk[i].terrainChunkObject.transform.position.sqrMagnitude >= chunk[i].ChunkLODRadiusFromPlayer(player.transform.position, LODradiusOne) && chunk[i].LODIndex != 2)
+                chunk[i].GenerateTerrainChunk(chunk[i].terrainChunkObject.transform.position, 2);
+            else if (chunk[i].terrainChunkObject.transform.position.sqrMagnitude <= chunk[i].ChunkLODRadiusFromPlayer(player.transform.position, LODradiusThree) && chunk[i].terrainChunkObject.transform.position.sqrMagnitude >= chunk[i].ChunkLODRadiusFromPlayer(player.transform.position, LODradiusTwo) && chunk[i].LODIndex != 4)
+                chunk[i].GenerateTerrainChunk(chunk[i].terrainChunkObject.transform.position, 4);
         }
     }
 }
