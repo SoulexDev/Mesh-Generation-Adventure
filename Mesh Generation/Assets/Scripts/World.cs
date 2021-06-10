@@ -8,10 +8,12 @@ public class World : MonoBehaviour
     public Vector3 playerSpawnPosition;
     int renderDistanceInChunks = 32;
     public float unitRenderDistance;
+    [HideInInspector]
     public float LODradiusOne, LODradiusTwo, LODradiusThree;
     private PlayerMovement player;
     private TerrainChunk terrainChunk;
     List<TerrainChunk> chunk = new List<TerrainChunk>();
+    [HideInInspector]
     public Vector3 chunkPosition;
     public Material terrainMaterial;
     public Material waterMaterial;
@@ -26,10 +28,10 @@ public class World : MonoBehaviour
     public bool performanceMode = false;
     public bool autoUpdate = false;
     public static bool generatingWorld = false;
-    public LODS Lod;
     public TerrainSettings terrainSettings;
     [HideInInspector]
     public NoiseSettings noiseSettings;
+    [HideInInspector]
     public Spawnable[] spawnables;
     public Biome[] biomes;
     public StructureGeneration structureGeneration;
@@ -38,10 +40,9 @@ public class World : MonoBehaviour
         player = FindObjectOfType<PlayerMovement>();
         structureGeneration = FindObjectOfType<StructureGeneration>();
         unitRenderDistance = renderDistanceInChunks * terrainSettings.chunkWidth * 100;
-        LODradiusOne = unitRenderDistance / 3;
+        LODradiusOne = unitRenderDistance / 4;
         LODradiusTwo = LODradiusOne * 2;
         LODradiusThree = unitRenderDistance;
-        Debug.Log($"RadiusOne{LODradiusOne}RadiusTwo{LODradiusTwo}RadiusThree{LODradiusThree}");
     }
     private void Update()
     {
@@ -77,7 +78,7 @@ public class World : MonoBehaviour
                 chunk[c].waterMeshRenderer.material = waterMaterial;
                 c++;
                 if(performanceMode)
-                    yield return new WaitForFixedUpdate();
+                    yield return new WaitForEndOfFrame();
             }
         }
         generatingWorld = false;
@@ -94,12 +95,11 @@ public class World : MonoBehaviour
             }
             else if(!chunk[i].terrainChunkObject.activeSelf)
                 chunk[i].terrainChunkObject.SetActive(true);
-
-            if (chunk[i].terrainChunkObject.transform.position.sqrMagnitude <= chunk[i].ChunkLODRadiusFromPlayer(player.transform.position, LODradiusOne) && chunk[i].LODIndex != 1)
+            if (chunk[i].ChunkLODRadiusFromPlayer(player.transform.position, LODradiusOne) <= LODradiusOne && chunk[i].LODIndex != 1)
                 chunk[i].GenerateTerrainChunk(chunk[i].terrainChunkObject.transform.position, 1);
-            else if (chunk[i].terrainChunkObject.transform.position.sqrMagnitude <= chunk[i].ChunkLODRadiusFromPlayer(player.transform.position, LODradiusTwo) && chunk[i].terrainChunkObject.transform.position.sqrMagnitude >= chunk[i].ChunkLODRadiusFromPlayer(player.transform.position, LODradiusOne) && chunk[i].LODIndex != 2)
+            else if (chunk[i].ChunkLODRadiusFromPlayer(player.transform.position, LODradiusTwo) <= LODradiusTwo && chunk[i].ChunkLODRadiusFromPlayer(player.transform.position, LODradiusOne) >= LODradiusOne && chunk[i].LODIndex != 2)
                 chunk[i].GenerateTerrainChunk(chunk[i].terrainChunkObject.transform.position, 2);
-            else if (chunk[i].terrainChunkObject.transform.position.sqrMagnitude <= chunk[i].ChunkLODRadiusFromPlayer(player.transform.position, LODradiusThree) && chunk[i].terrainChunkObject.transform.position.sqrMagnitude >= chunk[i].ChunkLODRadiusFromPlayer(player.transform.position, LODradiusTwo) && chunk[i].LODIndex != 4)
+            else if (chunk[i].ChunkLODRadiusFromPlayer(player.transform.position, LODradiusThree) <= LODradiusThree && chunk[i].ChunkLODRadiusFromPlayer(player.transform.position, LODradiusTwo) >= LODradiusTwo && chunk[i].LODIndex != 4)
                 chunk[i].GenerateTerrainChunk(chunk[i].terrainChunkObject.transform.position, 4);
         }
     }
@@ -107,25 +107,19 @@ public class World : MonoBehaviour
 [System.Serializable]
 public class NoiseSettings
 {
-    [Header("Noise Types: Mountains and Hills(0), Structure Noise Mask(1)")]
     public int noiseType;
-    [Header("Mountain Settings")]
-    public float mountainLacunarity = 1.6f;
-    public float mountainOctaves = 5;
-    public float mountainGain = 0.4f;
-    public float mountainFrequency = 0.1f;
-    [Header("Hill Settings")]
-    public float hillLacunarity = 1.6f;
-    public float hillOctaves = 9;
-    public float hillFrequency = 0.4f;
     public float GetTerrainGenerationFromNoise(Vector3 pos, int chunkWidth, float scale, AnimationCurve mountainCurve, AnimationCurve hillCurve, int noiseType)
     {
         FastNoiseLite mountains = new FastNoiseLite();
         FastNoiseLite hills = new FastNoiseLite();
+        FastNoiseLite cliffs = new FastNoiseLite();
+        FastNoiseLite islands = new FastNoiseLite();
+        FastNoiseLite spores = new FastNoiseLite();
+        FastNoiseLite ridges = new FastNoiseLite();
         FastNoiseLite structureMask = new FastNoiseLite();
         float worldNoiseX = ((pos.x + 0.1f) / chunkWidth * scale);
         float worldNoiseZ = ((pos.z + 0.1f) / chunkWidth * scale);
-        SetNoiseValues(mountains, hills, structureMask);
+        SetNoiseValues(mountains, hills, structureMask, cliffs, islands, spores, ridges);
         if (noiseType == 0)
             return mountainCurve.Evaluate(mountains.GetNoise(worldNoiseX, worldNoiseZ)) + hillCurve.Evaluate(hills.GetNoise(worldNoiseX, worldNoiseZ));
         else if (noiseType == 1)
@@ -133,7 +127,7 @@ public class NoiseSettings
         else
             return 0;
     }
-    public void SetNoiseValues(FastNoiseLite mountains, FastNoiseLite hills, FastNoiseLite structureMask)
+    public void SetNoiseValues(FastNoiseLite mountains, FastNoiseLite hills, FastNoiseLite structureMask, FastNoiseLite cliffs, FastNoiseLite islands, FastNoiseLite spores, FastNoiseLite ridges)
     {
         //Hills
         hills.SetNoiseType(FastNoiseLite.NoiseType.Perlin);
@@ -148,6 +142,10 @@ public class NoiseSettings
         mountains.SetFractalLacunarity(1.8f);
         mountains.SetFractalGain(0.4f);
         mountains.SetFrequency(0.1f);
+        //Cliffs
+        //Islands
+        //Spores
+        //Ridges
         //Structure Mask
         structureMask.SetNoiseType(FastNoiseLite.NoiseType.OpenSimplex2);
         structureMask.SetFractalType(FastNoiseLite.FractalType.FBm);
@@ -156,12 +154,6 @@ public class NoiseSettings
         structureMask.SetFractalLacunarity(2);
         structureMask.SetFrequency(0.005f);
     }
-}
-[System.Serializable]
-public class LODS
-{
-    public enum LODs { LOD1 = 1, LOD2 = 2, LOD3 = 4}
-    public LODs levelsOfDetail;
 }
 [System.Serializable]
 public class TerrainSettings
@@ -175,28 +167,15 @@ public class TerrainSettings
     public Vector3 mapCenter;
 }
 [System.Serializable]
-public class Spawnable
-{
-    public string spawnableStructureID;
-    public GameObject prefabObject;
-    [Range(0.1f,1)]
-    public float scatterAmount;
-    [Range(0.1f, 1)]
-    public float minimumScatterYValue;
-    [Range(0, 100)]
-    public int regionDensity;
-}
-[System.Serializable]
 public class Biome
 {
     public string biomeName;
-    public Spawnable spawnables;
-    public enum NoiseTypes { Mountains, Hills, Cliffs, Islands, Spores, Ridges }
-    public NoiseTypes[] noiseTypes;
+    public NoiseTypesOptions noiseOptions;
+    public Spawnable[] spawnables;
     public enum TreeTypes { None, Oak, Birch, Jungle, Shrub, Crimson, Charcoaled }
-    public TreeTypes[] treeTypes;
+    //public TreeTypes[] treeTypes;
     public enum BuildingTypes { None, Dungeon, Colleseum, Village, StoneHedge, AtlantisVillage, Temple, House, AbandonedStructure }
-    public BuildingTypes[] buildingTypes;
+    //public BuildingTypes[] buildingTypes;
     public enum LootBoxTypes { None, SmallChest, LargeChest, Crate, AlienChest, HomeOwnersStorageBox }
-    public LootBoxTypes[] lootBoxTypes;
+    //public LootBoxTypes[] lootBoxTypes;
 }

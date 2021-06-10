@@ -19,7 +19,6 @@ public class TerrainChunk
     World world;
     NoiseSettings noise;
     TerrainSettings terrainSettings;
-    LODS lods;
     Vector2[] waterUvs;
     Vector2[] terrainUvs;
     [HideInInspector]
@@ -27,6 +26,7 @@ public class TerrainChunk
     private GameObject waterChunkObject;
     [SerializeField] protected float distanceFromPlayer;
     public StructureGeneration structureGeneration;
+    bool spawnablesGenerated = false;
     public void Init(Vector3 pos)
     {
         terrainChunkObject = new GameObject();
@@ -40,7 +40,6 @@ public class TerrainChunk
         terrainCollider = terrainChunkObject.AddComponent<MeshCollider>();
         world = GameObject.FindObjectOfType<World>();
         noise = world.noiseSettings;
-        lods = world.Lod;
         structureGeneration = world.structureGeneration;
         terrainSettings = world.terrainSettings;
         terrainChunkObject.transform.SetParent(world.transform);
@@ -52,7 +51,7 @@ public class TerrainChunk
         terrainMesh.Clear();
         waterMesh.Clear();
         GenerateTerrainChunk(pos, 1);
-        GenerateWaterChunk(pos);
+        GenerateWaterChunk();
         terrainMeshFilter.mesh = terrainMesh;
         waterMeshFilter.mesh = waterMesh;
         terrainCollider.sharedMesh = terrainMesh;
@@ -64,14 +63,15 @@ public class TerrainChunk
     }
     public float ChunkLODRadiusFromPlayer(Vector3 playerPosition, float radius)
     {
-        return new Vector2(playerPosition.x + radius - terrainChunkObject.transform.position.x, playerPosition.z + radius - terrainChunkObject.transform.position.z).sqrMagnitude;
+        return new Vector2(playerPosition.x - terrainChunkObject.transform.position.x, playerPosition.z - terrainChunkObject.transform.position.z).sqrMagnitude;
     }
     public void GenerateTerrainChunk(Vector3 pos, int LODvalue)
     {
         LODIndex = LODvalue;
-        if (structureGeneration != null)
-            structureGeneration.GenerateStructure(pos, terrainChunkObject.transform, 0);
-        int levelOfDetail = LODvalue;
+        if (structureGeneration != null && !spawnablesGenerated)
+            structureGeneration.GenerateStructure(pos, terrainChunkObject.transform, 0, 0);
+        spawnablesGenerated = true;
+        int levelOfDetail = LODIndex;
         int terrainLOD = terrainSettings.chunkWidth / levelOfDetail;
         terrainVertices = new Vector3[(terrainLOD + 1) * (terrainLOD + 1)];
         for (int i = 0, z = 0; z <= terrainSettings.chunkWidth; z+= levelOfDetail)
@@ -103,12 +103,14 @@ public class TerrainChunk
         }
         UpdateTerrainMesh();
     }
-    public void GenerateWaterChunk(Vector3 pos)
+    public void GenerateWaterChunk()
     {
-        waterVertices = new Vector3[(terrainSettings.chunkWidth + 1) * (terrainSettings.chunkWidth + 1)];
-        for (int i = 0, z = 0; z <= terrainSettings.chunkWidth; z++)
+        int levelOfDetail = LODIndex;
+        int terrainLOD = terrainSettings.chunkWidth / levelOfDetail;
+        waterVertices = new Vector3[(terrainLOD + 1) * (terrainLOD + 1)];
+        for (int i = 0, z = 0; z <= terrainSettings.chunkWidth; z+= levelOfDetail)
         {
-            for (int x = 0; x <= terrainSettings.chunkWidth; x++)
+            for (int x = 0; x <= terrainSettings.chunkWidth; x+= levelOfDetail)
             {
                 waterVertices[i] = new Vector3(x, world.waterHeight / terrainSettings.terrainHeight * 5, z);
                 i++;
@@ -116,10 +118,10 @@ public class TerrainChunk
         }
         int vertexIndex = 0;
         int triangleIndex = 0;
-        waterTriangles = new int[terrainSettings.chunkWidth * terrainSettings.chunkWidth * 6];
+        waterTriangles = new int[terrainLOD * terrainLOD * 6];
         for (int z = 0; z < terrainSettings.chunkWidth; z++)
         {
-            for (int x = 0; x < terrainSettings.chunkWidth; x++)
+            for (int x = 0; x < terrainLOD; x++)
             {
                 waterTriangles[triangleIndex + 0] = vertexIndex;
                 waterTriangles[triangleIndex + 1] = vertexIndex + terrainSettings.chunkWidth + 1;
@@ -136,6 +138,7 @@ public class TerrainChunk
     }
     void UpdateTerrainMesh()
     {
+        terrainMesh.Clear();
         terrainUvs = new Vector2[terrainVertices.Length];
         for (int i = 0; i < terrainUvs.Length; i++)
         {
@@ -148,6 +151,7 @@ public class TerrainChunk
     }
     void UpdateWaterMesh()
     {
+        waterMesh.Clear();
         waterUvs = new Vector2[waterVertices.Length];
         for (int i = 0; i < waterUvs.Length; i++)
         {

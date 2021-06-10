@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8863371779172715494}
   - component: {fileID: 7992357063142025675}
   - component: {fileID: 2887618649283735642}
+  - component: {fileID: -4308426352635815685}
   m_Layer: 0
   m_Name: LargeOakTree
   m_TagString: Untagged
@@ -83,3 +84,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &-4308426352635815685
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4286569792262951515}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4493585093827132993, guid: 3bf1b40e1f6eb004b845416dec47265c, type: 3}

@@ -87,6 +87,8 @@
     <Compile Include="Assets\Spoonie Tutorials\DayNight\LightingPreset.cs" />
     <Compile Include="Assets\Shaders\GrassPainterEditor.cs" />
     <Compile Include="Assets\Spoonie Tutorials\Common\Standard Assets\Effects\Common\ImageEffectHelper.cs" />
+    <Compile Include="Assets\Scripts\Spawnable.cs" />
+    <Compile Include="Assets\Scripts\NoiseTypesOptions.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Spoonie Tutorials\Common\Standard Assets\Effects\DepthOfField\Resources\MedianFilter.shader" />

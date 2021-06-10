@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3502100fe1e5b6d42afe8a94e144d07f, type: 3}
+  m_Name: PlainsBiomeNoise
+  m_EditorClassIdentifier: 
+  mountains: 1
+  hills: 1
+  cliffs: 0
+  islands: 0
+  spores: 0
+  ridges: 0
+  mountainOctaves: 0
+  mountainLacunarity: 0
+  mountainFrequency: 0
+  mountainFractalGain: 0
+  mountainWeightedStrength: 0
+  hillOctaves: 0
+  hillLacunarity: 0
+  hillFrequency: 0
+  hillFractalGain: 0
+  hillWeightedStrength: 0
+  cliffOctaves: 0
+  cliffLacunarity: 0
+  cliffFrequency: 0
+  cliffFractalGain: 0
+  cliffWeightedStrength: 0
+  islandsOctaves: 0
+  islandsLacunarity: 0
+  islandsFrequency: 0
+  islandsFractalGain: 0
+  islandsWeightedStrength: 0
+  sporesOctaves: 0
+  sporesLacunarity: 0
+  sporesFrequency: 0
+  sporesFractalGain: 0
+  sporesWeightedStrength: 0
+  ridgesOctaves: 0
+  ridgesLacunarity: 0
+  ridgesFrequency: 0
+  ridgesFractalGain: 0
+  ridgesWeightedStrength: 0

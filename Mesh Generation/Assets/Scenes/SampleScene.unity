@@ -644,12 +644,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59f0fddb561cc6b4ebb8c049727545fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerSpawnPosition: {x: 128, y: 20, z: 128}
+  playerSpawnPosition: {x: 1152, y: 48, z: 1152}
   unitRenderDistance: 0
   LODradiusOne: 0
   LODradiusTwo: 0
   LODradiusThree: 0
-  chunkPosition: {x: 256, y: 0, z: 256}
+  chunkPosition: {x: 2304, y: 0, z: 2304}
   terrainMaterial: {fileID: 2100000, guid: 726954e8b0449ee408350bfd472da7c1, type: 2}
   waterMaterial: {fileID: 2100000, guid: 5e6c0cf4db60f61488ace466bed7d71b, type: 2}
   mountainHeightCurve:
@@ -731,18 +731,18 @@ MonoBehaviour:
     - serializedVersion: 3
       time: 0
       value: 0
-      inSlope: 1
-      outSlope: 1
-      tangentMode: 34
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
       weightedMode: 0
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
       time: 1
       value: 1
-      inSlope: 1
-      outSlope: 1
-      tangentMode: 34
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
       weightedMode: 0
       inWeight: 0
       outWeight: 0
@@ -751,40 +751,20 @@ MonoBehaviour:
     m_RotationOrder: 4
   performanceMode: 0
   autoUpdate: 0
-  Lod:
-    levelsOfDetail: 1
   terrainSettings:
-    chunkWidth: 24
-    mapChunkSize: 24
-    terrainHeight: 24
-    mapCenter: {x: 128, y: 20, z: 128}
+    chunkWidth: 16
+    mapChunkSize: 50
+    terrainHeight: 16
+    mapCenter: {x: 1152, y: 48, z: 1152}
   noiseSettings:
     noiseType: 0
-    mountainLacunarity: 1.8
-    mountainOctaves: 5
-    mountainGain: 0.4
-    mountainFrequency: 0.1
-    hillLacunarity: 1.6
-    hillOctaves: 9
-    hillFrequency: 0.4
   spawnables:
-  - spawnableStructureID: Small Oak Trees
-    prefabObject: {fileID: 2211813159111314896, guid: 06cfe0975df9d694daa8f56d92231284, type: 3}
-    scatterAmount: 0.5
-    minimumScatterYValue: 0.27
-    regionDensity: 50
+  - {fileID: 0}
   biomes:
   - biomeName: Plains
+    noiseOptions: {fileID: 11400000, guid: 7694a0108a32d2248901beb84c3b8e23, type: 2}
     spawnables:
-      spawnableStructureID: 
-      prefabObject: {fileID: 0}
-      scatterAmount: 0
-      minimumScatterYValue: 0
-      regionDensity: 0
-    noiseTypes: 
-    treeTypes: 
-    buildingTypes: 
-    lootBoxTypes: 
+    - {fileID: 11400000, guid: 68862f29fc152dc4f8bb4649cd49ebd9, type: 2}
   structureGeneration: {fileID: 1454789277}
 --- !u!114 &1454789277
 MonoBehaviour:
@@ -980,7 +960,7 @@ MonoBehaviour:
   headBobSpeed: 5
   headBobIntensity: 3
   crouchLerpSpeed: 1
-  creativeMode: 1
+  creativeMode: 0
   creativeModeFlySpeed: 10
 --- !u!1 &1884727884
 GameObject:
