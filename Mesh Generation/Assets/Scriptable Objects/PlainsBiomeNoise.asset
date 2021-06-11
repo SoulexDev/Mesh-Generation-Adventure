@@ -18,33 +18,25 @@ MonoBehaviour:
   islands: 0
   spores: 0
   ridges: 0
-  mountainOctaves: 0
-  mountainLacunarity: 0
-  mountainFrequency: 0
-  mountainFractalGain: 0
-  mountainWeightedStrength: 0
-  hillOctaves: 0
-  hillLacunarity: 0
-  hillFrequency: 0
-  hillFractalGain: 0
-  hillWeightedStrength: 0
-  cliffOctaves: 0
-  cliffLacunarity: 0
-  cliffFrequency: 0
-  cliffFractalGain: 0
-  cliffWeightedStrength: 0
-  islandsOctaves: 0
-  islandsLacunarity: 0
-  islandsFrequency: 0
-  islandsFractalGain: 0
-  islandsWeightedStrength: 0
-  sporesOctaves: 0
-  sporesLacunarity: 0
-  sporesFrequency: 0
-  sporesFractalGain: 0
-  sporesWeightedStrength: 0
-  ridgesOctaves: 0
-  ridgesLacunarity: 0
-  ridgesFrequency: 0
-  ridgesFractalGain: 0
+  mountainOctaves: 5
+  mountainLacunarity: 1.8
+  mountainFrequency: 0.1
+  mountainFractalGain: 0.4
+  hillOctaves: 9
+  hillLacunarity: 1.6
+  hillFrequency: 0.4
+  cliffFrequency: 0.02
+  islandsOctaves: 5
+  islandsLacunarity: 1.6
+  islandsFractalGain: 0.2
+  islandsWeightedStrength: 0.1
+  sporesOctaves: 5
+  sporesLacunarity: 2
+  sporesFrequency: 0.04
+  sporesFractalGain: 0.1
+  sporesWeightedStrength: 1
+  ridgesOctaves: 5
+  ridgesLacunarity: 2
+  ridgesFrequency: 0.04
+  ridgesFractalGain: 0.3
   ridgesWeightedStrength: 0

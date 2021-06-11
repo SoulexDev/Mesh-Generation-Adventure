@@ -14,4 +14,9 @@ public class Spawnable : ScriptableObject
     public float minimumScatterYValue;
     [Range(0, 100)]
     public int regionDensity;
+    [Header("Structure Mask Settings")]
+    public float structureMaskOctaves = 3;
+    public float structureMaskLacunarity = 2;
+    public float structureMaskFrequency = 0.005f;
+    public float structureMaskWeightedStrength = 1;
 }

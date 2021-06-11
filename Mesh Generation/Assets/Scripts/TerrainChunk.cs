@@ -61,9 +61,9 @@ public class TerrainChunk
     {
         return distanceFromPlayer = new Vector2(playerPostion.x - terrainChunkObject.transform.position.x, playerPostion.z - terrainChunkObject.transform.position.z).sqrMagnitude;
     }
-    public float ChunkLODRadiusFromPlayer(Vector3 playerPosition, float radius)
+    public int GetBiomeIndex()
     {
-        return new Vector2(playerPosition.x - terrainChunkObject.transform.position.x, playerPosition.z - terrainChunkObject.transform.position.z).sqrMagnitude;
+        return 0;
     }
     public void GenerateTerrainChunk(Vector3 pos, int LODvalue)
     {
@@ -78,7 +78,7 @@ public class TerrainChunk
         {
             for (int x = 0; x <= terrainSettings.chunkWidth; x+= levelOfDetail)
             {
-                float terrainY = noise.GetTerrainGenerationFromNoise(new Vector3(x + pos.x,0,z + pos.z), terrainSettings.chunkWidth, 1, world.lockedMountainCurve, world.lockedHillCurve, 0);
+                float terrainY = noise.GetTerrainGenerationFromNoise(new Vector3(x + pos.x,0,z + pos.z), terrainSettings.chunkWidth, 1, world.lockedMountainCurve, world.lockedHillCurve, world.lockedHillCurve, world.lockedHillCurve, world.lockedHillCurve, world.lockedHillCurve, 0);
                 terrainVertices[i] = new Vector3(x, terrainY * terrainSettings.terrainHeight, z);
                 i++;
             }

@@ -74,8 +74,11 @@ public class World : MonoBehaviour
                 chunk.Add(new TerrainChunk());
                 chunkPosition = new Vector3(x * terrainSettings.chunkWidth, 0, z * terrainSettings.chunkWidth);
                 chunk[c].Init(chunkPosition);
-                chunk[c].terrainMeshRenderer.material = terrainMaterial;
-                chunk[c].waterMeshRenderer.material = waterMaterial;
+                if(chunk[c].GetBiomeIndex() == 0)
+                {
+                    chunk[c].terrainMeshRenderer.material = terrainMaterial;
+                    chunk[c].waterMeshRenderer.material = waterMaterial;
+                }
                 c++;
                 if(performanceMode)
                     yield return new WaitForEndOfFrame();
@@ -95,11 +98,11 @@ public class World : MonoBehaviour
             }
             else if(!chunk[i].terrainChunkObject.activeSelf)
                 chunk[i].terrainChunkObject.SetActive(true);
-            if (chunk[i].ChunkLODRadiusFromPlayer(player.transform.position, LODradiusOne) <= LODradiusOne && chunk[i].LODIndex != 1)
+            if (chunk[i].ChunkDistanceFromPlayer(player.transform.position) <= LODradiusOne && chunk[i].LODIndex != 1)
                 chunk[i].GenerateTerrainChunk(chunk[i].terrainChunkObject.transform.position, 1);
-            else if (chunk[i].ChunkLODRadiusFromPlayer(player.transform.position, LODradiusTwo) <= LODradiusTwo && chunk[i].ChunkLODRadiusFromPlayer(player.transform.position, LODradiusOne) >= LODradiusOne && chunk[i].LODIndex != 2)
+            else if (chunk[i].ChunkDistanceFromPlayer(player.transform.position) <= LODradiusTwo && chunk[i].ChunkDistanceFromPlayer(player.transform.position) >= LODradiusOne && chunk[i].LODIndex != 2)
                 chunk[i].GenerateTerrainChunk(chunk[i].terrainChunkObject.transform.position, 2);
-            else if (chunk[i].ChunkLODRadiusFromPlayer(player.transform.position, LODradiusThree) <= LODradiusThree && chunk[i].ChunkLODRadiusFromPlayer(player.transform.position, LODradiusTwo) >= LODradiusTwo && chunk[i].LODIndex != 4)
+            else if (chunk[i].ChunkDistanceFromPlayer(player.transform.position) <= LODradiusThree && chunk[i].ChunkDistanceFromPlayer(player.transform.position) >= LODradiusTwo && chunk[i].LODIndex != 4)
                 chunk[i].GenerateTerrainChunk(chunk[i].terrainChunkObject.transform.position, 4);
         }
     }
@@ -108,7 +111,7 @@ public class World : MonoBehaviour
 public class NoiseSettings
 {
     public int noiseType;
-    public float GetTerrainGenerationFromNoise(Vector3 pos, int chunkWidth, float scale, AnimationCurve mountainCurve, AnimationCurve hillCurve, int noiseType)
+    public float GetTerrainGenerationFromNoise(Vector3 pos, int chunkWidth, float scale, AnimationCurve mountainCurve, AnimationCurve hillCurve, AnimationCurve cliffCurve, AnimationCurve islandCurve, AnimationCurve sporeCurve, AnimationCurve ridgesCurve, int noiseType)
     {
         FastNoiseLite mountains = new FastNoiseLite();
         FastNoiseLite hills = new FastNoiseLite();
@@ -129,12 +132,6 @@ public class NoiseSettings
     }
     public void SetNoiseValues(FastNoiseLite mountains, FastNoiseLite hills, FastNoiseLite structureMask, FastNoiseLite cliffs, FastNoiseLite islands, FastNoiseLite spores, FastNoiseLite ridges)
     {
-        //Hills
-        hills.SetNoiseType(FastNoiseLite.NoiseType.Perlin);
-        hills.SetFractalType(FastNoiseLite.FractalType.FBm);
-        hills.SetFractalLacunarity(1.6f);
-        hills.SetFractalOctaves(9);
-        hills.SetFrequency(0.4f);
         //Mountains
         mountains.SetNoiseType(FastNoiseLite.NoiseType.OpenSimplex2S);
         mountains.SetFractalType(FastNoiseLite.FractalType.Ridged);
@@ -142,10 +139,44 @@ public class NoiseSettings
         mountains.SetFractalLacunarity(1.8f);
         mountains.SetFractalGain(0.4f);
         mountains.SetFrequency(0.1f);
+        //Hills
+        hills.SetNoiseType(FastNoiseLite.NoiseType.Perlin);
+        hills.SetFractalType(FastNoiseLite.FractalType.FBm);
+        hills.SetFractalLacunarity(1.6f);
+        hills.SetFractalOctaves(9);
+        hills.SetFrequency(0.4f);
         //Cliffs
+        cliffs.SetNoiseType(FastNoiseLite.NoiseType.Cellular);
+        cliffs.SetFractalType(FastNoiseLite.FractalType.None);
+        cliffs.SetFrequency(0.02f);
+        cliffs.SetCellularDistanceFunction(FastNoiseLite.CellularDistanceFunction.Hybrid);
+        cliffs.SetCellularReturnType(FastNoiseLite.CellularReturnType.CellValue);
+        cliffs.SetDomainWarpType(FastNoiseLite.DomainWarpType.OpenSimplex2);
+        cliffs.SetDomainWarpAmp(150);
         //Islands
+        islands.SetNoiseType(FastNoiseLite.NoiseType.OpenSimplex2S);
+        islands.SetFractalType(FastNoiseLite.FractalType.FBm);
+        islands.SetFractalOctaves(5);
+        islands.SetFractalLacunarity(1.6f);
+        islands.SetFractalGain(0.2f);
+        islands.SetFractalWeightedStrength(0.1f);
         //Spores
+        spores.SetNoiseType(FastNoiseLite.NoiseType.Cellular);
+        spores.SetFractalType(FastNoiseLite.FractalType.FBm);
+        spores.SetFrequency(0.04f);
+        spores.SetFractalOctaves(5);
+        spores.SetFractalLacunarity(2);
+        spores.SetFractalGain(0.1f);
+        spores.SetFractalWeightedStrength(1);
+        spores.SetCellularReturnType(FastNoiseLite.CellularReturnType.Distance2Add);
         //Ridges
+        ridges.SetNoiseType(FastNoiseLite.NoiseType.Cellular);
+        ridges.SetFractalType(FastNoiseLite.FractalType.Ridged);
+        ridges.SetFrequency(0.04f);
+        ridges.SetFractalOctaves(5);
+        ridges.SetFractalLacunarity(2);
+        ridges.SetFractalGain(0.3f);
+        ridges.SetFractalWeightedStrength(0);
         //Structure Mask
         structureMask.SetNoiseType(FastNoiseLite.NoiseType.OpenSimplex2);
         structureMask.SetFractalType(FastNoiseLite.FractalType.FBm);

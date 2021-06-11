@@ -14,44 +14,36 @@ public class NoiseTypesOptions : ScriptableObject
     public bool ridges;
     //Mountains
     [Header("Mountains")]
-    public int mountainOctaves;
-    public float mountainLacunarity;
-    public float mountainFrequency;
-    public float mountainFractalGain;
-    public float mountainWeightedStrength;
+    public int mountainOctaves = 5;
+    public float mountainLacunarity = 1.8f;
+    public float mountainFrequency = 0.1f;
+    public float mountainFractalGain = 0.4f;
     //Hills
     [Header("Hills")]
-    public int hillOctaves;
-    public float hillLacunarity;
-    public float hillFrequency;
-    public float hillFractalGain;
-    public float hillWeightedStrength;
+    public int hillOctaves = 9;
+    public float hillLacunarity = 1.6f;
+    public float hillFrequency = 0.4f;
     //Cliffs
     [Header("Cliffs")]
-    public int cliffOctaves;
-    public float cliffLacunarity;
-    public float cliffFrequency;
-    public float cliffFractalGain;
-    public float cliffWeightedStrength;
+    public float cliffFrequency = 0.02f;
     //Islands
     [Header("Islands")]
-    public int islandsOctaves;
-    public float islandsLacunarity;
-    public float islandsFrequency;
-    public float islandsFractalGain;
-    public float islandsWeightedStrength;
+    public int islandsOctaves = 5;
+    public float islandsLacunarity = 1.6f;
+    public float islandsFractalGain = 0.2f;
+    public float islandsWeightedStrength = 0.1f;
     //Spores
     [Header("Spores")]
-    public int sporesOctaves;
-    public float sporesLacunarity;
-    public float sporesFrequency;
-    public float sporesFractalGain;
-    public float sporesWeightedStrength;
+    public int sporesOctaves = 5;
+    public float sporesLacunarity = 2;
+    public float sporesFrequency = 0.04f;
+    public float sporesFractalGain = 0.1f;
+    public float sporesWeightedStrength = 1;
     //Ridges
     [Header("Ridges")]
-    public int ridgesOctaves;
-    public float ridgesLacunarity;
-    public float ridgesFrequency;
-    public float ridgesFractalGain;
-    public float ridgesWeightedStrength;
+    public int ridgesOctaves = 5;
+    public float ridgesLacunarity = 2;
+    public float ridgesFrequency = 0.04f;
+    public float ridgesFractalGain = 0.3f;
+    public float ridgesWeightedStrength = 0;
 }
