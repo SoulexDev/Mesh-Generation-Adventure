@@ -650,7 +650,10 @@ MonoBehaviour:
   LODradiusTwo: 0
   LODradiusThree: 0
   chunkPosition: {x: 2304, y: 0, z: 2304}
-  terrainMaterial: {fileID: 2100000, guid: 726954e8b0449ee408350bfd472da7c1, type: 2}
+  terrainMaterial:
+  - {fileID: 2100000, guid: 726954e8b0449ee408350bfd472da7c1, type: 2}
+  - {fileID: 2100000, guid: 621cddb90cd1f9841a2dfc0d34e83d3d, type: 2}
+  - {fileID: 2100000, guid: 852fd75e135faa040a3472dfdaaa33e2, type: 2}
   waterMaterial: {fileID: 2100000, guid: 5e6c0cf4db60f61488ace466bed7d71b, type: 2}
   mountainHeightCurve:
     serializedVersion: 2
@@ -753,16 +756,24 @@ MonoBehaviour:
   autoUpdate: 0
   terrainSettings:
     chunkWidth: 16
-    mapChunkSize: 50
+    mapChunkSize: 100
     terrainHeight: 16
     mapCenter: {x: 1152, y: 48, z: 1152}
   noiseSettings:
-    noiseType: 0
+    world: {fileID: 0}
   spawnables:
   - {fileID: 0}
   biomes:
   - biomeName: Plains
     noiseOptions: {fileID: 11400000, guid: 7694a0108a32d2248901beb84c3b8e23, type: 2}
+    spawnables:
+    - {fileID: 11400000, guid: 68862f29fc152dc4f8bb4649cd49ebd9, type: 2}
+  - biomeName: Desert
+    noiseOptions: {fileID: 11400000, guid: eb0857c01cafbbc4db654003cc7c0bd1, type: 2}
+    spawnables:
+    - {fileID: 11400000, guid: 68862f29fc152dc4f8bb4649cd49ebd9, type: 2}
+  - biomeName: Ocean
+    noiseOptions: {fileID: 11400000, guid: 3e3fe60cbc0d57c48b9d0364f4b3cd25, type: 2}
     spawnables:
     - {fileID: 11400000, guid: 68862f29fc152dc4f8bb4649cd49ebd9, type: 2}
   structureGeneration: {fileID: 1454789277}
@@ -960,7 +971,7 @@ MonoBehaviour:
   headBobSpeed: 5
   headBobIntensity: 3
   crouchLerpSpeed: 1
-  creativeMode: 0
+  creativeMode: 1
   creativeModeFlySpeed: 10
 --- !u!1 &1884727884
 GameObject:

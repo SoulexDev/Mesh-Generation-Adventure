@@ -13,7 +13,11 @@ MonoBehaviour:
   m_Name: SmallOakTrees
   m_EditorClassIdentifier: 
   spawnableStructureID: 0
-  prefabObject: {fileID: 2211813159111314896, guid: 06cfe0975df9d694daa8f56d92231284, type: 3}
+  prefabObject: {fileID: 8234097251058861877, guid: 2d313255cd46db848b1e47476d67ddae, type: 3}
   scatterAmount: 0.3
   minimumScatterYValue: 0.2
   regionDensity: 50
+  structureMaskOctaves: 3
+  structureMaskLacunarity: 2
+  structureMaskFrequency: 0.005
+  structureMaskWeightedStrength: 1

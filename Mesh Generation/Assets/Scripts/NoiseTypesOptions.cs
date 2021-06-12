@@ -18,20 +18,24 @@ public class NoiseTypesOptions : ScriptableObject
     public float mountainLacunarity = 1.8f;
     public float mountainFrequency = 0.1f;
     public float mountainFractalGain = 0.4f;
+    public AnimationCurve mountainCurve;
     //Hills
     [Header("Hills")]
     public int hillOctaves = 9;
     public float hillLacunarity = 1.6f;
     public float hillFrequency = 0.4f;
+    public AnimationCurve hillCurve;
     //Cliffs
     [Header("Cliffs")]
     public float cliffFrequency = 0.02f;
+    public AnimationCurve cliffCurve;
     //Islands
     [Header("Islands")]
     public int islandsOctaves = 5;
     public float islandsLacunarity = 1.6f;
     public float islandsFractalGain = 0.2f;
     public float islandsWeightedStrength = 0.1f;
+    public AnimationCurve islandCurve;
     //Spores
     [Header("Spores")]
     public int sporesOctaves = 5;
@@ -39,6 +43,7 @@ public class NoiseTypesOptions : ScriptableObject
     public float sporesFrequency = 0.04f;
     public float sporesFractalGain = 0.1f;
     public float sporesWeightedStrength = 1;
+    public AnimationCurve sporeCurve;
     //Ridges
     [Header("Ridges")]
     public int ridgesOctaves = 5;
@@ -46,4 +51,5 @@ public class NoiseTypesOptions : ScriptableObject
     public float ridgesFrequency = 0.04f;
     public float ridgesFractalGain = 0.3f;
     public float ridgesWeightedStrength = 0;
+    public AnimationCurve ridgesCurve;
 }
