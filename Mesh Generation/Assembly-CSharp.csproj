@@ -76,8 +76,10 @@
     <Compile Include="Assets\Spoonie Tutorials\Common\Standard Assets\Effects\ScreenSpaceReflection\ScreenSpaceReflection.cs" />
     <Compile Include="Assets\Spoonie Tutorials\Common\Standard Assets\Effects\DepthOfField\DepthOfField.cs" />
     <Compile Include="Assets\Spoonie Tutorials\Common\Standard Assets\Effects\MotionBlur\MotionBlur.cs" />
+    <Compile Include="Assets\Scripts\NoiseTypesOptions.cs" />
     <Compile Include="Assets\Spoonie Tutorials\Common\Standard Assets\Effects\Common\MinAttribute.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\Spawnable.cs" />
     <Compile Include="Assets\Spoonie Tutorials\Common\Standard Assets\Effects\AmbientOcclusion\Helpers\Settings.cs" />
     <Compile Include="Assets\Spoonie Tutorials\Common\Standard Assets\Effects\AntiAliasing\AntiAliasing.cs" />
     <Compile Include="Assets\Spoonie Tutorials\Common\Standard Assets\Effects\AntiAliasing\IAntiAliasing.cs" />
@@ -87,8 +89,7 @@
     <Compile Include="Assets\Spoonie Tutorials\DayNight\LightingPreset.cs" />
     <Compile Include="Assets\Shaders\GrassPainterEditor.cs" />
     <Compile Include="Assets\Spoonie Tutorials\Common\Standard Assets\Effects\Common\ImageEffectHelper.cs" />
-    <Compile Include="Assets\Scripts\Spawnable.cs" />
-    <Compile Include="Assets\Scripts\NoiseTypesOptions.cs" />
+    <Compile Include="Assets\Scripts\MapScriptThing.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Spoonie Tutorials\Common\Standard Assets\Effects\DepthOfField\Resources\MedianFilter.shader" />

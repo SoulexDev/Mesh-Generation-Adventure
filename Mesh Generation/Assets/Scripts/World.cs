@@ -164,29 +164,27 @@ public class NoiseSettings
     public float GetBiomes(Vector3 pos, float scale, bool biomeSettingsType)
     {
         FastNoiseLite biomeTemperature = new FastNoiseLite();
-        FastNoiseLite biomeHeight = new FastNoiseLite();
+        FastNoiseLite biomeInterpolation = new FastNoiseLite();
         float biomeNoiseX = ((pos.x + 0.1f) / world.terrainSettings.mapChunkSize * scale);
         float biomeNoiseZ = ((pos.z + 0.1f) / world.terrainSettings.mapChunkSize * scale);
-        SetBiomeNoise(biomeTemperature, biomeHeight);
+        SetBiomeNoise(biomeTemperature, biomeInterpolation);
         if (biomeSettingsType)
             return biomeTemperature.GetNoise(biomeNoiseX, biomeNoiseZ);
         else
-            return biomeHeight.GetNoise(biomeNoiseX, biomeNoiseZ);
+            return biomeInterpolation.GetNoise(biomeNoiseX, biomeNoiseZ);
     }
-    public void SetBiomeNoise(FastNoiseLite biomeTemperature, FastNoiseLite biomeHeight)
+    public void SetBiomeNoise(FastNoiseLite biomeTemperature, FastNoiseLite biomeInterpolation)
     {
         //Temperature
         biomeTemperature.SetNoiseType(FastNoiseLite.NoiseType.Cellular);
-        biomeTemperature.SetFractalType(FastNoiseLite.FractalType.FBm);
-        biomeTemperature.SetFractalOctaves(2);
-        biomeTemperature.SetFractalLacunarity(1);
+        biomeTemperature.SetFractalType(FastNoiseLite.FractalType.None);
         biomeTemperature.SetFrequency(0.05f);
-        //Height
-        biomeHeight.SetNoiseType(FastNoiseLite.NoiseType.OpenSimplex2);
-        biomeHeight.SetFractalType(FastNoiseLite.FractalType.None);
-        biomeHeight.SetFractalOctaves(2);
-        biomeHeight.SetFractalLacunarity(1);
-        biomeHeight.SetFrequency(0.05f);
+        biomeTemperature.SetCellularReturnType(FastNoiseLite.CellularReturnType.CellValue);
+        //Biome Lerp
+        biomeInterpolation.SetNoiseType(FastNoiseLite.NoiseType.Cellular);
+        biomeInterpolation.SetFractalType(FastNoiseLite.FractalType.None);
+        biomeInterpolation.SetFrequency(0.05f);
+        biomeInterpolation.SetCellularReturnType(FastNoiseLite.CellularReturnType.Distance);
     }
     public void SetStructureMaskValues(FastNoiseLite structureMask, int biomeID, int spawnableID)
     {

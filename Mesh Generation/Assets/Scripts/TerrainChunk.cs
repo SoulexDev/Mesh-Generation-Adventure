@@ -62,7 +62,7 @@ public class TerrainChunk
         return distanceFromPlayer = new Vector2(playerPostion.x - terrainChunkObject.transform.position.x, playerPostion.z - terrainChunkObject.transform.position.z).sqrMagnitude;
     }
     public void GenerateTerrainChunk(Vector3 pos, int LODvalue)
-    {
+    {   
         int biome = GetBiomeIndex(pos);
         LODIndex = LODvalue;
         if (structureGeneration != null && !spawnablesGenerated)
@@ -80,8 +80,8 @@ public class TerrainChunk
         {
             for (int x = 0; x <= terrainSettings.chunkWidth; x+= levelOfDetail)
             {
-                float terrainY = noise.GetTerrainGenerationFromNoise(new Vector3(x + pos.x,0,z + pos.z), terrainSettings.chunkWidth, 1, biome);
-                terrainVertices[i] = new Vector3(x, terrainY * terrainSettings.terrainHeight, z);
+                float terrainYVector = noise.GetTerrainGenerationFromNoise(new Vector3(x + pos.x, 0, z + pos.z), terrainSettings.chunkWidth, 1, biome);
+                terrainVertices[i] = new Vector3(x, terrainYVector * terrainSettings.terrainHeight, z);
                 i++;
             }
         }
@@ -140,13 +140,12 @@ public class TerrainChunk
     }
     public int GetBiomeIndex(Vector3 pos)
     {
-        float temperature = world.noiseSettings.GetBiomes(pos, 1, true);
-        float height = world.noiseSettings.GetBiomes(pos, 1, false);
-        if (temperature > 0.7f && height < 0.4f)
+        float temperature = noise.GetBiomes(pos, 1, true);
+        if (temperature >= 0 && temperature <= 0.05f)
             return 0;
-        if (temperature > 0.3f && height > 0.7f)
+        if (temperature >= 0.05f && temperature <= 0.1f)
             return 1;
-        if (temperature < 0.2f && height < 0.1f)
+        if (temperature >= 0.1f && temperature <= 0.15f)
             return 2;
         else
             return 0;
