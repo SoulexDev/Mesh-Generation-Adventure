@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76af09845e0cf7d4ca25968731b81fb8, type: 3}
+  m_Name: Iron
+  m_EditorClassIdentifier: 
+  spawnableStructureID: 1
+  prefabObject: {fileID: 2480165591749504432, guid: a68e8a663eed62444bff78dd30a71923, type: 3}
+  minimumHeight: 0.2
+  regionDensity: 5
+  structureMaskOctaves: 3
+  structureMaskLacunarity: 2
+  structureMaskFrequency: 0.1
+  structureMaskWeightedStrength: 1
+  harvestable: {fileID: 11400000, guid: 355ec5a493fb5b44ea6593c380e3fbb6, type: 2}

@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58f789c2c9fe58644aaa1c387cc93430, type: 3}
+  m_Name: Iron Ore
+  m_EditorClassIdentifier: 
+  health: 100
+  droppedItems:
+  - {fileID: 2022804437426630513, guid: d2fce1197a3ec5a44a258e1b3d3b6453, type: 3}
+  harvestingTool: 1

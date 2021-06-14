@@ -80,7 +80,7 @@ public class TerrainChunk
         {
             for (int x = 0; x <= terrainSettings.chunkWidth; x+= levelOfDetail)
             {
-                float terrainYVector = noise.GetTerrainGenerationFromNoise(new Vector3(x + pos.x, 0, z + pos.z), terrainSettings.chunkWidth, 1, biome);
+                float terrainYVector = noise.GetTerrainGenerationFromNoise(new Vector3(x + pos.x, 0, z + pos.z), terrainSettings.chunkWidth, 1, biome, world.seed);
                 terrainVertices[i] = new Vector3(x, terrainYVector * terrainSettings.terrainHeight, z);
                 i++;
             }
@@ -140,15 +140,15 @@ public class TerrainChunk
     }
     public int GetBiomeIndex(Vector3 pos)
     {
-        float temperature = noise.GetBiomes(pos, 1, true);
+        float temperature = noise.GetBiomes(pos, 1, true, world.seed);
         if (temperature >= 0 && temperature <= 0.05f)
             return 0;
-        if (temperature >= 0.05f && temperature <= 0.1f)
+        else if (temperature >= 0.05f && temperature <= 0.1f)
             return 1;
-        if (temperature >= 0.1f && temperature <= 0.15f)
+        else if (temperature >= 0.1f && temperature <= 0.15f)
             return 2;
         else
-            return 0;
+            return 1;
     }
     void UpdateTerrainMesh()
     {

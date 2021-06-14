@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class World : MonoBehaviour
 {
+    public int seed;
     [HideInInspector]
     public Vector3 playerSpawnPosition;
     int renderDistanceInChunks = 32;
@@ -44,6 +45,7 @@ public class World : MonoBehaviour
         LODradiusOne = unitRenderDistance / 4;
         LODradiusTwo = LODradiusOne * 2;
         LODradiusThree = unitRenderDistance;
+        Random.InitState(seed);
     }
     private void Update()
     {
@@ -110,7 +112,7 @@ public class World : MonoBehaviour
 public class NoiseSettings
 {
     public World world;
-    public float GetTerrainGenerationFromNoise(Vector3 pos, int chunkWidth, float scale, int biomeID)
+    public float GetTerrainGenerationFromNoise(Vector3 pos, int chunkWidth, float scale, int biomeID, int seed)
     {
         float noiseTypeOne;
         float noiseTypeTwo;
@@ -126,7 +128,7 @@ public class NoiseSettings
         FastNoiseLite ridges = new FastNoiseLite();
         float worldNoiseX = ((pos.x + 0.1f) / chunkWidth * scale);
         float worldNoiseZ = ((pos.z + 0.1f) / chunkWidth * scale);
-        SetNoiseValues(mountains, hills, cliffs, islands, spores, ridges, biomeID);
+        SetNoiseValues(mountains, hills, cliffs, islands, spores, ridges, biomeID, seed);
         if (world.biomes[biomeID].noiseOptions.mountains)
             noiseTypeOne = world.biomes[biomeID].noiseOptions.mountainCurve.Evaluate(mountains.GetNoise(worldNoiseX, worldNoiseZ));
         else
@@ -153,54 +155,58 @@ public class NoiseSettings
             noiseTypeSix = 0;
         return noiseTypeOne + noiseTypeTwo + noiseTypeThree + noiseTypeFour + noiseTypeFive + noiseTypeSix;
     }
-    public float GetStructureMask(Vector3 pos, int chunkWidth, float scale, int biomeID, int spawnableID)
+    public float GetStructureMask(Vector3 pos, int chunkWidth, float scale, int biomeID, int spawnableID, int seed)
     {
         FastNoiseLite structureMask = new FastNoiseLite();
         float worldNoiseX = ((pos.x + 0.1f) / chunkWidth * scale);
         float worldNoiseZ = ((pos.z + 0.1f) / chunkWidth * scale);
-        SetStructureMaskValues(structureMask, biomeID, spawnableID);
+        SetStructureMaskValues(structureMask, biomeID, spawnableID, seed);
         return structureMask.GetNoise(worldNoiseX, worldNoiseZ);
     }
-    public float GetBiomes(Vector3 pos, float scale, bool biomeSettingsType)
+    public float GetBiomes(Vector3 pos, float scale, bool biomeSettingsType, int seed)
     {
         FastNoiseLite biomeTemperature = new FastNoiseLite();
         FastNoiseLite biomeInterpolation = new FastNoiseLite();
         float biomeNoiseX = ((pos.x + 0.1f) / world.terrainSettings.mapChunkSize * scale);
         float biomeNoiseZ = ((pos.z + 0.1f) / world.terrainSettings.mapChunkSize * scale);
-        SetBiomeNoise(biomeTemperature, biomeInterpolation);
+        SetBiomeNoise(biomeTemperature, biomeInterpolation, seed);
         if (biomeSettingsType)
             return biomeTemperature.GetNoise(biomeNoiseX, biomeNoiseZ);
         else
             return biomeInterpolation.GetNoise(biomeNoiseX, biomeNoiseZ);
     }
-    public void SetBiomeNoise(FastNoiseLite biomeTemperature, FastNoiseLite biomeInterpolation)
+    public void SetBiomeNoise(FastNoiseLite biomeTemperature, FastNoiseLite biomeInterpolation, int seed)
     {
         //Temperature
+        biomeTemperature.SetSeed(seed);
         biomeTemperature.SetNoiseType(FastNoiseLite.NoiseType.Cellular);
         biomeTemperature.SetFractalType(FastNoiseLite.FractalType.None);
         biomeTemperature.SetFrequency(0.05f);
         biomeTemperature.SetCellularReturnType(FastNoiseLite.CellularReturnType.CellValue);
         //Biome Lerp
+        biomeInterpolation.SetSeed(seed);
         biomeInterpolation.SetNoiseType(FastNoiseLite.NoiseType.Cellular);
         biomeInterpolation.SetFractalType(FastNoiseLite.FractalType.None);
         biomeInterpolation.SetFrequency(0.05f);
         biomeInterpolation.SetCellularReturnType(FastNoiseLite.CellularReturnType.Distance);
     }
-    public void SetStructureMaskValues(FastNoiseLite structureMask, int biomeID, int spawnableID)
+    public void SetStructureMaskValues(FastNoiseLite structureMask, int biomeID, int spawnableID, int seed)
     {
         //Structure Mask
-        structureMask.SetNoiseType(FastNoiseLite.NoiseType.OpenSimplex2);
+        structureMask.SetSeed(seed);
+        structureMask.SetNoiseType(FastNoiseLite.NoiseType.OpenSimplex2S);
         structureMask.SetFractalType(FastNoiseLite.FractalType.FBm);
         structureMask.SetFractalOctaves(world.biomes[biomeID].spawnables[spawnableID].structureMaskOctaves);
         structureMask.SetFractalWeightedStrength(world.biomes[biomeID].spawnables[spawnableID].structureMaskWeightedStrength);
         structureMask.SetFractalLacunarity(world.biomes[biomeID].spawnables[spawnableID].structureMaskLacunarity);
         structureMask.SetFrequency(world.biomes[biomeID].spawnables[spawnableID].structureMaskFrequency);
     }
-    public void SetNoiseValues(FastNoiseLite mountains, FastNoiseLite hills, FastNoiseLite cliffs, FastNoiseLite islands, FastNoiseLite spores, FastNoiseLite ridges, int biomeID)
+    public void SetNoiseValues(FastNoiseLite mountains, FastNoiseLite hills, FastNoiseLite cliffs, FastNoiseLite islands, FastNoiseLite spores, FastNoiseLite ridges, int biomeID, int seed)
     {
         //Mountains
         if (world.biomes[biomeID].noiseOptions.mountains)
         {
+            mountains.SetSeed(seed);
             mountains.SetNoiseType(FastNoiseLite.NoiseType.OpenSimplex2S);
             mountains.SetFractalType(FastNoiseLite.FractalType.Ridged);
             mountains.SetFractalOctaves(world.biomes[biomeID].noiseOptions.mountainOctaves);
@@ -211,6 +217,7 @@ public class NoiseSettings
         //Hills
         if (world.biomes[biomeID].noiseOptions.hills)
         {
+            hills.SetSeed(seed);
             hills.SetNoiseType(FastNoiseLite.NoiseType.Perlin);
             hills.SetFractalType(FastNoiseLite.FractalType.FBm);
             hills.SetFractalLacunarity(world.biomes[biomeID].noiseOptions.hillLacunarity);
@@ -220,6 +227,7 @@ public class NoiseSettings
         //Cliffs
         if (world.biomes[biomeID].noiseOptions.cliffs)
         {
+            cliffs.SetSeed(seed);
             cliffs.SetNoiseType(FastNoiseLite.NoiseType.Cellular);
             cliffs.SetFractalType(FastNoiseLite.FractalType.None);
             cliffs.SetFrequency(world.biomes[biomeID].noiseOptions.cliffFrequency);
@@ -231,6 +239,7 @@ public class NoiseSettings
         //Islands
         if (world.biomes[biomeID].noiseOptions.islands)
         {
+            islands.SetSeed(seed);
             islands.SetNoiseType(FastNoiseLite.NoiseType.OpenSimplex2S);
             islands.SetFractalType(FastNoiseLite.FractalType.FBm);
             islands.SetFractalOctaves(world.biomes[biomeID].noiseOptions.islandsOctaves);
@@ -241,6 +250,7 @@ public class NoiseSettings
         //Spores
         if (world.biomes[biomeID].noiseOptions.spores)
         {
+            spores.SetSeed(seed);
             spores.SetNoiseType(FastNoiseLite.NoiseType.Cellular);
             spores.SetFractalType(FastNoiseLite.FractalType.FBm);
             spores.SetFrequency(world.biomes[biomeID].noiseOptions.sporesFrequency);
@@ -253,6 +263,7 @@ public class NoiseSettings
         //Ridges
         if (world.biomes[biomeID].noiseOptions.ridges)
         {
+            ridges.SetSeed(seed);
             ridges.SetNoiseType(FastNoiseLite.NoiseType.Cellular);
             ridges.SetFractalType(FastNoiseLite.FractalType.Ridged);
             ridges.SetFrequency(world.biomes[biomeID].noiseOptions.ridgesFrequency);

@@ -1,0 +1,114 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3502100fe1e5b6d42afe8a94e144d07f, type: 3}
+  m_Name: DesertBiomeNoise
+  m_EditorClassIdentifier: 
+  mountains: 0
+  hills: 1
+  cliffs: 0
+  islands: 0
+  spores: 0
+  ridges: 0
+  mountainOctaves: 5
+  mountainLacunarity: 1.8
+  mountainFrequency: 0.1
+  mountainFractalGain: 0.4
+  mountainCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  hillOctaves: 9
+  hillLacunarity: 1.6
+  hillFrequency: 0.4
+  hillCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: -0.004055023
+      value: 0.40509033
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.307145
+      value: 0.79231626
+      inSlope: 0.17818525
+      outSlope: 0.17818525
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.2464645
+    - serializedVersion: 3
+      time: 0.6737602
+      value: 0.5627406
+      inSlope: 2.0605497
+      outSlope: 2.0605497
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.1156543
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  cliffFrequency: 0.02
+  cliffCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  islandsOctaves: 5
+  islandsLacunarity: 1.6
+  islandsFractalGain: 0.2
+  islandsWeightedStrength: 0.1
+  islandCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  sporesOctaves: 5
+  sporesLacunarity: 2
+  sporesFrequency: 0.04
+  sporesFractalGain: 0.1
+  sporesWeightedStrength: 1
+  sporeCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  ridgesOctaves: 5
+  ridgesLacunarity: 2
+  ridgesFrequency: 0.04
+  ridgesFractalGain: 0.3
+  ridgesWeightedStrength: 0
+  ridgesCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
