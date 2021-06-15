@@ -5,6 +5,8 @@ using UnityEngine;
 public class HarvestingItem : MonoBehaviour
 {
     public Harvestable harvestable;
+    private GameObject droppedObject;
+    private Rigidbody droppedObjRb;
     private float health;
     private void Start()
     {
@@ -18,7 +20,10 @@ public class HarvestingItem : MonoBehaviour
         {
             for (int t = 0; t < harvestable.droppedItems.Length; t++)
             {
-                Instantiate(harvestable.droppedItems[t], transform.position, Quaternion.Euler(0,0,0));
+                droppedObject =  Instantiate(harvestable.droppedItems[t], transform.position, Quaternion.Euler(Random.Range(0,360), Random.Range(0, 360), Random.Range(0, 360)));
+                droppedObjRb = droppedObject.GetComponent<Rigidbody>();
+                if(droppedObjRb != null)
+                    droppedObjRb.AddForce(transform.up * 2 + transform.forward * 1.5f, ForceMode.Impulse);
             }
             Destroy(gameObject);
         }

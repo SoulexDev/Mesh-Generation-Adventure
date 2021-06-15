@@ -8,12 +8,12 @@ public class CameraMovement : MonoBehaviour
     private Transform cameraHolder;
     private float x, z;
     public float cameraXSpeed, cameraYSpeed;
-    private PlayerMovement player;
+    private PlayerMove player;
     bool cursorLocked = true;
     private void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
-        player = GameObject.FindObjectOfType<PlayerMovement>();
+        player = GameObject.FindObjectOfType<PlayerMove>();
         orient = player.transform.GetChild(0);
         cameraHolder = orient.transform.GetChild(0).gameObject.transform.GetChild(0);
     }
@@ -28,6 +28,7 @@ public class CameraMovement : MonoBehaviour
         x += Input.GetAxisRaw("Mouse X") * cameraXSpeed * Time.fixedDeltaTime;
         z += Input.GetAxisRaw("Mouse Y") * cameraYSpeed * Time.fixedDeltaTime;
 
+        z = Mathf.Clamp(z, -90, 90);
         orient.rotation = Quaternion.Euler(0, x, 0);
         cameraHolder.rotation = Quaternion.Euler(-z, x, 0);
     }

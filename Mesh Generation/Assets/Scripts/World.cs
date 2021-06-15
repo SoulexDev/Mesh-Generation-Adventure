@@ -11,7 +11,7 @@ public class World : MonoBehaviour
     public float unitRenderDistance;
     [HideInInspector]
     public float LODradiusOne, LODradiusTwo, LODradiusThree;
-    private PlayerMovement player;
+    private PlayerMove player;
     private TerrainChunk terrainChunk;
     List<TerrainChunk> chunk = new List<TerrainChunk>();
     [HideInInspector]
@@ -39,7 +39,7 @@ public class World : MonoBehaviour
     private void Start()
     {
         noiseSettings.world = this;
-        player = FindObjectOfType<PlayerMovement>();
+        player = FindObjectOfType<PlayerMove>();
         structureGeneration = FindObjectOfType<StructureGeneration>();
         unitRenderDistance = renderDistanceInChunks * terrainSettings.chunkWidth * 100;
         LODradiusOne = unitRenderDistance / 4;
@@ -167,8 +167,8 @@ public class NoiseSettings
     {
         FastNoiseLite biomeTemperature = new FastNoiseLite();
         FastNoiseLite biomeInterpolation = new FastNoiseLite();
-        float biomeNoiseX = ((pos.x + 0.1f) / world.terrainSettings.mapChunkSize * scale);
-        float biomeNoiseZ = ((pos.z + 0.1f) / world.terrainSettings.mapChunkSize * scale);
+        float biomeNoiseX = ((pos.x + 0.1f) / /*world.terrainSettings.mapChunkSize*/ world.terrainSettings.chunkWidth * scale);
+        float biomeNoiseZ = ((pos.z + 0.1f) / /*world.terrainSettings.mapChunkSize*/world.terrainSettings.chunkWidth * scale);
         SetBiomeNoise(biomeTemperature, biomeInterpolation, seed);
         if (biomeSettingsType)
             return biomeTemperature.GetNoise(biomeNoiseX, biomeNoiseZ);
