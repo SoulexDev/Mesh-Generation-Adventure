@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class World : MonoBehaviour
 {
+    public PhysicMaterial groundMaterial;
     public int seed;
     [HideInInspector]
     public Vector3 playerSpawnPosition;
@@ -167,8 +168,8 @@ public class NoiseSettings
     {
         FastNoiseLite biomeTemperature = new FastNoiseLite();
         FastNoiseLite biomeInterpolation = new FastNoiseLite();
-        float biomeNoiseX = ((pos.x + 0.1f) / /*world.terrainSettings.mapChunkSize*/ world.terrainSettings.chunkWidth * scale);
-        float biomeNoiseZ = ((pos.z + 0.1f) / /*world.terrainSettings.mapChunkSize*/world.terrainSettings.chunkWidth * scale);
+        float biomeNoiseX = ((pos.x + 0.1f) / world.terrainSettings.mapChunkSize * scale);
+        float biomeNoiseZ = ((pos.z + 0.1f) / world.terrainSettings.mapChunkSize * scale);
         SetBiomeNoise(biomeTemperature, biomeInterpolation, seed);
         if (biomeSettingsType)
             return biomeTemperature.GetNoise(biomeNoiseX, biomeNoiseZ);

@@ -15,4 +15,5 @@ MonoBehaviour:
   health: 100
   droppedItems:
   - {fileID: 2022804437426630513, guid: d2fce1197a3ec5a44a258e1b3d3b6453, type: 3}
+  mineParticles: {fileID: 6423676608622808795, guid: a34c8482816cb7a488a1949eb5e44440, type: 3}
   harvestingTool: 1

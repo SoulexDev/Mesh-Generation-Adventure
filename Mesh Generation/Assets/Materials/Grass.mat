@@ -93,8 +93,8 @@ Material:
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
-    - _GrassHeight: 0.1
-    - _GrassWidth: 0.06
+    - _GrassHeight: 0.32
+    - _GrassWidth: 0.12
     - _MaxDist: 60
     - _Metallic: 0
     - _MinDist: 40
@@ -111,7 +111,7 @@ Material:
     - _SrcBlend: 1
     - _Strength: 5
     - _Surface: 0
-    - _WindSpeed: 100
+    - _WindSpeed: 10
     - _WindStrength: 0.05
     - _WorkflowMode: 1
     - _ZWrite: 1

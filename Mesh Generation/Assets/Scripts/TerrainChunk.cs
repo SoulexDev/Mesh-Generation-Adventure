@@ -56,6 +56,7 @@ public class TerrainChunk
         waterMeshFilter.mesh = waterMesh;
         terrainCollider.sharedMesh = terrainMesh;
         terrainChunkObject.layer = 3;
+        terrainCollider.material = world.groundMaterial;
     }
     public float ChunkDistanceFromPlayer(Vector3 playerPostion)
     {
@@ -80,6 +81,7 @@ public class TerrainChunk
         {
             for (int x = 0; x <= terrainSettings.chunkWidth; x+= levelOfDetail)
             {
+                float biomeEdges = noise.GetBiomes(pos, 1, false, world.seed);
                 float terrainYVector = noise.GetTerrainGenerationFromNoise(new Vector3(x + pos.x, 0, z + pos.z), terrainSettings.chunkWidth, 1, biome, world.seed);
                 terrainVertices[i] = new Vector3(x, terrainYVector * terrainSettings.terrainHeight, z);
                 i++;
@@ -148,7 +150,7 @@ public class TerrainChunk
         else if (temperature >= 0.1f && temperature <= 0.15f)
             return 2;
         else
-            return 1;
+            return 0;
     }
     void UpdateTerrainMesh()
     {

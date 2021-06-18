@@ -59,6 +59,8 @@
     <Compile Include="Assets\Spoonie Tutorials\Common\Standard Assets\Effects\AntiAliasing\FXAA\FXAA.cs" />
     <Compile Include="Assets\Spoonie Tutorials\Common\Standard Assets\Effects\Common\RenderTextureUtility.cs" />
     <Compile Include="Assets\Spoonie Tutorials\Common\Standard Assets\Effects\Bloom\Bloom.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerMove.cs" />
+    <Compile Include="Assets\Scripts\Player\HeadMovement.cs" />
     <Compile Include="Assets\Scripts\Tool.cs" />
     <Compile Include="Assets\Spoonie Tutorials\Common\Standard Assets\Effects\AmbientOcclusion\AmbientOcclusion.cs" />
     <Compile Include="Assets\Spoonie Tutorials\DayNight\LightingManager.cs" />
@@ -68,8 +70,12 @@
     <Compile Include="Assets\Scripts\World.cs" />
     <Compile Include="Assets\Spoonie Tutorials\Common\Standard Assets\Effects\LensAberrations\LensAberrations.cs" />
     <Compile Include="Assets\Spoonie Tutorials\Common\Standard Assets\Effects\AntiAliasing\SMAA\SMAA.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerHealth.cs" />
     <Compile Include="Assets\Scripts\HarvestingItem.cs" />
-    <Compile Include="Assets\Scripts\CameraMovement.cs" />
+    <Compile Include="Assets\Scripts\DrawNoise.cs" />
+    <Compile Include="Assets\Scripts\Player\CameraMovement.cs" />
+    <Compile Include="Assets\Scripts\InventorySystem\InventoryItem.cs" />
+    <Compile Include="Assets\Scripts\InventorySystem\InventoryHandler.cs" />
     <Compile Include="Assets\Spoonie Tutorials\Common\Standard Assets\Effects\TemporalAntiAliasing\TemporalAntiAliasing.cs" />
     <Compile Include="Assets\Scripts\FastNoiseLite.cs" />
     <Compile Include="Assets\Scripts\StructureGeneration.cs" />
@@ -82,7 +88,7 @@
     <Compile Include="Assets\Spoonie Tutorials\Common\Standard Assets\Effects\MotionBlur\MotionBlur.cs" />
     <Compile Include="Assets\Scripts\NoiseTypesOptions.cs" />
     <Compile Include="Assets\Spoonie Tutorials\Common\Standard Assets\Effects\Common\MinAttribute.cs" />
-    <Compile Include="Assets\Scripts\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Spawnable.cs" />
     <Compile Include="Assets\Spoonie Tutorials\Common\Standard Assets\Effects\AmbientOcclusion\Helpers\Settings.cs" />
     <Compile Include="Assets\Spoonie Tutorials\Common\Standard Assets\Effects\AntiAliasing\AntiAliasing.cs" />
@@ -93,9 +99,7 @@
     <Compile Include="Assets\Spoonie Tutorials\DayNight\LightingPreset.cs" />
     <Compile Include="Assets\Shaders\GrassPainterEditor.cs" />
     <Compile Include="Assets\Spoonie Tutorials\Common\Standard Assets\Effects\Common\ImageEffectHelper.cs" />
-    <Compile Include="Assets\Scripts\DrawNoise.cs" />
-    <Compile Include="Assets\Scripts\PlayerMove.cs" />
-    <Compile Include="Assets\Scripts\HeadMovement.cs" />
+    <Compile Include="Assets\Scripts\PostProcessingHandler.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Spoonie Tutorials\Common\Standard Assets\Effects\DepthOfField\Resources\MedianFilter.shader" />

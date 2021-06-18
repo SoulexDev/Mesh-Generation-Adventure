@@ -18,16 +18,13 @@ public class Interaction : MonoBehaviour
     void MyInput()
     {
         if (Input.GetButtonDown("Fire1"))
-            SwingItem();
+            Invoke("SwingItem", 0.7f);
     }
     void SwingItem()
     {
-        Invoke("DoSwing", 0.7f);
-    }
-    void DoSwing()
-    {
+        Debug.Log("Swang");
         RaycastHit hit;
-        if (Physics.SphereCast(playerCam.transform.position, 0.6f, playerCam.transform.forward, out hit, 0.5f))
+        if (Physics.SphereCast(playerCam.transform.position, 1.3f, playerCam.transform.forward, out hit, 1.3f))
         {
             if(harvestableItem == null)
                 harvestableItem = hit.collider.gameObject.GetComponent<HarvestingItem>();
